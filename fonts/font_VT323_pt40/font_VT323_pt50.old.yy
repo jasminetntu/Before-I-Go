@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"font_VT323",
+  "%Name":"font_VT323_pt50",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":32,
@@ -117,7 +117,7 @@
   "last":0,
   "lineHeight":40,
   "maintainGms1Font":false,
-  "name":"font_VT323",
+  "name":"font_VT323_pt50",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",
