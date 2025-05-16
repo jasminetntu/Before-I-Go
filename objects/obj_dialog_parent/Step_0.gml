@@ -1,5 +1,5 @@
-if(showing_dialog == false){
-	if(dialog.count() <= 0){
+if (showing_dialog == false){
+	if (dialog.count() <= 0){
 		instance_destroy();
 		return;
 	}

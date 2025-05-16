@@ -1,5 +1,5 @@
 function Dialogue() constructor {
-	_dialog = [];
+	_dialogs = [];
 	
 	add = function(_sprite, _message){
 		array_push(_dialogs, {
@@ -9,8 +9,8 @@ function Dialogue() constructor {
 			
 	}
 	
-	pop = function(){
-		var _t = array_first(_dialogue);
+	pop = function() {
+		var _t = array_first(_dialogs);
 		array_delete(_dialogs, 0, 1);
 		
 		return _t;
