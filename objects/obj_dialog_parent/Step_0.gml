@@ -1,4 +1,8 @@
-if (showing_dialog == false){
+if (pause_dialog == true) {
+	showing_dialog = false; //doesn't show dialog if it's paused
+	key_next = null;
+}
+else if (showing_dialog == false){
 	if (dialog.count() <= 0){
 		instance_destroy();
 		return;
