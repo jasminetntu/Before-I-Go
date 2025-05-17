@@ -7,7 +7,7 @@ if (showing_dialog == false){
 	current_dialog = dialog.pop();
 	showing_dialog = true;
 } else {
-	if(keyboard_check_released(key_next)){
+	if(mouse_check_button_released(key_next)){
 		showing_dialog = false;
 		alpha = 0;
 	}
