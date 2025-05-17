@@ -1,20 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_dialog_mom",
+  "%Name":"obj_contact",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_dialog_mom",
+  "name":"obj_contact",
   "overriddenProperties":[],
   "parent":{
     "name":"mom dialogue",
     "path":"folders/Objects/mom dialogue.yy",
   },
-  "parentObjectId":{
-    "name":"obj_dialog_parent",
-    "path":"objects/obj_dialog_parent/obj_dialog_parent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_contact_TEMP",
+    "path":"sprites/spr_contact_TEMP/spr_contact_TEMP.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -1,4 +1,4 @@
-function Dialogue() constructor {
+function scr_dialogue() constructor {
 	_dialogs = [];
 	
 	add = function(_sprite, _message){
