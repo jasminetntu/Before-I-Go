@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_button_boss_bad_3",
+  "%Name":"obj_button_mom_good_4",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_button_boss_bad_3",
+  "name":"obj_button_mom_good_4",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_button_parent","path":"objects/obj_button_parent/obj_button_parent.yy",},"propertyId":{"name":"button_text","path":"objects/obj_button_parent/obj_button_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Yeah.",},
   ],
   "parent":{
-    "name":"boss dialogue",
-    "path":"folders/Objects/boss dialogue.yy",
+    "name":"mom dialogue",
+    "path":"folders/Objects/mom dialogue.yy",
   },
   "parentObjectId":{
     "name":"obj_button_parent",
