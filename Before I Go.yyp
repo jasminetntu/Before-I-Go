@@ -62,6 +62,8 @@
     {"id":{"name":"spr_bg_night","path":"sprites/spr_bg_night/spr_bg_night.yy",},},
     {"id":{"name":"spr_button_TEMP","path":"sprites/spr_button_TEMP/spr_button_TEMP.yy",},},
     {"id":{"name":"spr_icon_sampleA","path":"sprites/spr_icon_sampleA/spr_icon_sampleA.yy",},},
+    {"id":{"name":"spr_phone_button","path":"sprites/spr_phone_button/spr_phone_button.yy",},},
+    {"id":{"name":"spr_phone_ui","path":"sprites/spr_phone_ui/spr_phone_ui.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
