@@ -5,6 +5,6 @@ draw_text(x, y, "jammyttu <programmer>\n"
 				+ "captpootis <programmer>\n"
 				+ "beigoo <composer>\n" //fix name
 				+ "iamfab <artist, writer>\n"
-				+ "ace_firewolf <artist, writer>"); //fix nam
+				+ "ace/daniel <artist, writer>");
 
 draw_set_halign(fa_left);

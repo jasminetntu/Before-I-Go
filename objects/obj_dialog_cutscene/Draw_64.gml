@@ -1,6 +1,6 @@
 if (showing_dialog = true) {
 	var text_x = 30;
-	var text_y = 18; //formerly negative?
+	var text_y = 18;
 	var height = 100;
 	var border = 5;
 	var padding = 16;
@@ -37,13 +37,12 @@ if (showing_dialog = true) {
 	// Drawing Text
 	draw_set_alpha(alpha_solid)
 	draw_set_color(c_white);
-	draw_text_ext(x_coord + text_x, y_coord + text_y, current_dialog.message, 16, display_get_gui_width() - 192);
+	draw_text_ext(x_coord + text_x, y_coord + text_y, current_dialog.message, 16, display_get_gui_width() - x_coord - (border * 4));
 	//^ 16 is how much it can go vertically, the one after is horizontally
 	//currently set to all the way across the screen
 	
 	alpha_trans = lerp(alpha_trans, 0.6, 0.06); //fades in dialogue
 	alpha_solid = lerp(alpha_solid, 1, 0.06);
-
 
 }
 
