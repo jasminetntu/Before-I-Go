@@ -31,7 +31,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.0.190",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"Before I Go",
   "resources":[
@@ -46,7 +46,6 @@
     {"id":{"name":"obj_dialog_parent","path":"objects/obj_dialog_parent/obj_dialog_parent.yy",},},
     {"id":{"name":"obj_dialog_sampleA","path":"objects/obj_dialog_sampleA/obj_dialog_sampleA.yy",},},
     {"id":{"name":"obj_text_credits","path":"objects/obj_text_credits/obj_text_credits.yy",},},
-    {"id":{"name":"Object12","path":"objects/Object12/Object12.yy",},},
     {"id":{"name":"rm_afternoon","path":"rooms/rm_afternoon/rm_afternoon.yy",},},
     {"id":{"name":"rm_credits","path":"rooms/rm_credits/rm_credits.yy",},},
     {"id":{"name":"rm_cutscene","path":"rooms/rm_cutscene/rm_cutscene.yy",},},
