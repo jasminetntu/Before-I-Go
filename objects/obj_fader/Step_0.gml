@@ -13,13 +13,13 @@ if(state == fade_in)
 		}
 	}
 }
-else if(state == fade_out)
-{
-	image_alpha -= fade_in_speed;
-	if(image_alpha <= 0)
+	else if(state == fade_out)
 	{
-		image_alpha = 0;
-		state = fade_in;
-		instance_destroy();
+		image_alpha -= fade_in_speed;
+		if(image_alpha <= 0)
+		{
+			image_alpha = 0;
+			state = fade_in;
+			instance_destroy();
+		}
 	}
-}
