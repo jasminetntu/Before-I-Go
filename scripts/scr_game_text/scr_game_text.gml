@@ -614,8 +614,146 @@ function scr_game_text(_text_id){
 		
 		#region ex dialogue
 		case "ex":
+			scr_text("*My ex.*");
+			scr_text("There's a reason their contact name is \"DO NOT CALL.\"");
+			scr_text("I told myself I wouldn't...");
+			scr_text("...but I need to hear it from them.");
+			scr_text("Whether or not they ever really cared.");
+			
+			scr_text("...");
+			scr_text("I knew you'd come crawling back.");
+			scr_text("So? What do you want?");
+			scr_text("Don't pretend you didn't miss me.");
+			scr_text("Someone better be dying.");
+				scr_option("I am dying.", "ex 1.1");
+				scr_option("I just needed to talk to someone.", "ex 1.2");
+				scr_option("I thought maybe you'd want to know how I was.", "ex 1.3");
+				break;
+			
+			
+			//options 1
+			
+			#region ex 1.1
+			case "ex 1.1":
+				global.curr_points++;
+				scr_text("*They snort.*");
+				scr_text("You serious?");
+				scr_text("You disappear for how long, then drop this on me?");
+				scr_text("You were always a mess.");
+				scr_text("Part of me isn't even surprised.");
+
+				#region ex 2
+				scr_text("You think just showing up again means I'm supposed to forget how you left?");
+				scr_text("I made you.");
+				scr_text("You were nothing before me.");
+					scr_option("You didn't make me.", "ex 2.1");
+					scr_option("I don't want to fight.", "ex 2.2");
+					scr_option("You ruined me.", "ex 2.3");
+					#endregion ex 2
+					break;
+					
+				#endregion ex 1.1
+				
+			#region ex 1.2
+			case "ex 1.2":
+				scr_text("Of course you did.");
+				scr_text("No one else is picking up?");
+				scr_text("You always end up crawling back.");
 		
-		
+				#region ex 2
+				scr_text("You think just showing up again means I'm supposed to forget how you left?");
+				scr_text("I made you.");
+				scr_text("You were nothing before me.");
+					scr_option("You didn't make me.", "ex 2.1");
+					scr_option("I don't want to fight.", "ex 2.2");
+					scr_option("You ruined me.", "ex 2.3");
+					#endregion ex 2
+					break;
+					
+				#endregion ex 1.2
+				
+			#region ex 1.3
+			case "ex 1.3":
+				global.curr_points--;
+				scr_text("Come on.");
+				scr_text("Don't act like this is about me.");
+				scr_text("You want something.");
+				scr_text("You always did.");
+				
+				#region ex 2
+				scr_text("You think just showing up again means I'm supposed to forget how you left?");
+				scr_text("I made you.");
+				scr_text("You were nothing before me.");
+					scr_option("You didn't make me.", "ex 2.1");
+					scr_option("I don't want to fight.", "ex 2.2");
+					scr_option("You ruined me.", "ex 2.3");
+					#endregion ex 2
+					break;
+					
+				#endregion ex 1.3
+			
+				
+				//options 2
+					
+				#region ex 2.1
+				case "ex 2.1":
+					global.curr_points++;
+					scr_text("*They laugh mockingly.*");
+					scr_text("Sure.");
+					scr_text("Keep telling yourself that.");
+					scr_text("But I'm the only one who stuck around.");
+					scr_text("Even now, you're calling me of all people.");
+
+					#region ex 3
+					
+						#endregion ex 3
+						break;
+					
+					#endregion ex 2.1
+				
+				#region ex 2.2
+				case "ex 2.2":
+					scr_text("Is that so?");
+					scr_text("Funny, because that's all we ever did.");
+					scr_text("Let's not pretend that you hated it.");
+					
+					#region ex 3
+					
+						#endregion ex 3
+						break;
+					
+					#endregion ex 2.2
+				
+				#region ex 2.3
+				case "ex 2.3":
+					global.curr_points--;
+					scr_text("Please.");
+					scr_text("You were already ruined when I found you.");
+					scr_text("I just stopped pretending I could fix you.");
+
+					
+					#region ex 3
+					
+					
+						#endregion ex 3
+						break;
+					
+					#endregion ex 2.3
+
+				
+					//options 3
+					
+						scr_option("", "ex 3.1");
+						scr_option("", "ex 3.2");
+						scr_option("", "ex 3.3");
+					
+						//options 4
+						
+							scr_option("", "ex 4.1");
+							scr_option("", "ex 4.2");
+							scr_option("", "ex 4.3");
+						
+			
 			break;
 		#endregion
 		
