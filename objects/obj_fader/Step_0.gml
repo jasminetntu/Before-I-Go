@@ -5,7 +5,12 @@ if(state == fade_in)
 	{
 		image_alpha = 1;
 		state = fade_out;
-		room_goto(room_to_transform_into);
+		if (room_to_transform_into == "next_room") {
+			room_goto_next();
+		}
+		else {
+			room_goto(room_to_transform_into); 
+		}
 	}
 }
 else if(state == fade_out)

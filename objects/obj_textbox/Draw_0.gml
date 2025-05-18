@@ -1,10 +1,10 @@
-accept_key = mouse_check_button_pressed(mb_left);
+//accept_key = mouse_check_button_pressed(mb_left);
+accept_key = keyboard_check_pressed(vk_space);
 
 textbox_x = camera_get_view_x(view_camera[0]);
 textbox_y = camera_get_view_y(view_camera[0]) + 750; //800 = offset from top of screen
 
-
-//--------- setup before drawing ---------
+#region //--------- setup before drawing ---------
 if (setup == false) {
 	setup = true;
 	draw_set_font(font_VT323_pt30);
@@ -15,19 +15,21 @@ if (setup == false) {
 	for (var p = 0; p < page_number; p++) {
 		text_length[p] = string_length(text[p]); //get length of each dialogue text/page
 		
-		//get x position for textbook
+		//get x position for textbox
 		//no character icon (center textbox)
 		text_x_offset[p] = 320; 
 	}
 }
+#endregion //setup
 
-//--------- typing the text ----------
+#region //--------- typing the text ----------
 if (draw_char < text_length[page]) {
 	draw_char += text_spd;
 	draw_char = clamp(draw_char, 0, text_length[page]);
 }
+#endregion //typing
 
-//--------- flip through "pages"/continue through dialogue ---------
+#region //--------- flip through "pages"/continue through dialogue ---------
 if (accept_key) {
 	//if typing is done, go to next page
 	if (draw_char == text_length[page]) {
@@ -52,10 +54,9 @@ if (accept_key) {
 		draw_char = text_length[page];	
 	} //was originally just else, lets see if theres nay errors
 }
+#endregion //flip
 
-
-
-//--------- draw the textbox ---------
+#region //--------- draw the textbox ---------
 var _txtb_x = textbox_x + text_x_offset[page];
 var _txtb_y = textbox_y;
 textbox_img += textbox_img_spd; //for background anim if wanted
@@ -64,9 +65,9 @@ textbox_spr_h = sprite_get_height(textbox_spr);
 
 //back of textbox
 draw_sprite_ext(textbox_spr, textbox_img, _txtb_x, _txtb_y, textbox_width/textbox_spr_w, textbox_height/textbox_spr_h, 0, c_white, 1);
+#endregion //draw box
 
-
-//--------- options ---------
+#region //--------- options ---------
 if (draw_char == text_length[page]) && (page == page_number - 1) {
 	
 	//option selection
@@ -91,9 +92,10 @@ if (draw_char == text_length[page]) && (page == page_number - 1) {
 		//the +30 in the x values is to make space for the arrow
 	} 
 }
+#endregion //options
 
-
-//draw actual text
+#region //draw actual text
 var _drawtext = string_copy(text[page],1,draw_char);
 draw_text_ext(_txtb_x + border, _txtb_y + border, _drawtext, line_sep, line_width);
 
+#endregion //draw text

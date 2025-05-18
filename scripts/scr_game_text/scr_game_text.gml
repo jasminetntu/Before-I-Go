@@ -1,14 +1,55 @@
 ///@param text_id
 function scr_game_text(_text_id){
-	
-	var curr_points = 0;
 	//.1 = good opt, .2 = neutral, .3 = bad
 	
 	switch (_text_id) {
 		
+		#region //room done
+		case "room done":
+			global.curr_points = 0; //reset points
+			global.room_done = true;
+			scr_text(""); //need to have this so it doesnt crash...
+			break;
+			#endregion //room done
+		
+		#region //cutscene
+		case "cutscene":
+			scr_text("Dear.");
+				scr_option("...", "cutscene 1");
+				break;
+				
+				case "cutscene 1":
+					scr_text("I'm sorry.");
+						scr_option("...", "cutscene 2");
+						break;
+					
+				case "cutscene 2":
+					scr_text("I know it's hard to accept...");
+					scr_text("...and I wish we could've done more to save you.");
+					scr_text("But you won't last another day.");
+					scr_text("A few more hours at best.");
+					scr_text("Your body is very weak right now.");
+					scr_text("But I hope you make the most of your time here.");
+						scr_option("...", "cutscene 3");
+						break;
+				
+				case "cutscene 3":
+					scr_text("*Sighs*");
+					scr_text("I'll leave you alone, now.");
+					scr_text("*The nurse leaves, and you are left with your thoughts.*");
+					scr_text("...");
+					scr_text("...");
+					scr_text("I should call them.");
+					scr_text("I need to say goodbye to everyone.");
+					scr_text("...");
+					scr_text("...Will I have enough time?");
+						scr_option("*Take out your phone*", "room done");
+						break;
+		
+			#endregion //cutscene
+		
 		#region //mom dialogue
 		case "mom":
-			//curr_points = 0;
 			
 			#region //mom 1
 			scr_text("Hello? Sweetheart?");
@@ -21,8 +62,9 @@ function scr_game_text(_text_id){
 				
 			#region //mom 1.1
 			case "mom 1.1":
+				global.curr_points++;
 				scr_text("I could tell. I think I always knew. I just didn't want to.");
-				//curr_points++;
+				//scr_text(curr_points); //testing
 				
 				#region  //----- mom 2 ----- 
 				scr_text("You sound so distant lately.");
@@ -54,9 +96,9 @@ function scr_game_text(_text_id){
 			
 			#region //mom 1.3
 			case "mom 1.3":
+				global.curr_points--;
 				scr_text("Don't you dare waste what little time you have left in silence.");
 				scr_text("Please--don't do that.");
-				//curr_points--;
 				
 				#region  //----- mom 2 ----- 
 				scr_text("You sound so distant lately.");
@@ -73,9 +115,9 @@ function scr_game_text(_text_id){
 			#region //options 2
 				#region  //mom 2.1
 				case "mom 2.1":
+					global.curr_points++;
 					scr_text("Okay... I see.");
 					scr_text("Let's just... talk about our days. Please? Can we?");
-					//curr_points++;
 				
 					#region //----- mom 3 ----- 
 					scr_text("I still remember when you were five.");
@@ -117,9 +159,9 @@ function scr_game_text(_text_id){
 				
 				#region  //mom 2.3
 				case "mom 2.3":
+					global.curr_points--;
 					scr_text("Jesus. You'd rather die than open up to me?");
 					scr_text("I'm your mom, for crying out loud.");
-					//curr_points--;
 				
 					#region //----- mom 3 ----- 
 					scr_text("I still remember when you were five.");
@@ -141,6 +183,7 @@ function scr_game_text(_text_id){
 				#region //mom options 3
 					#region //mom 3.1
 					case "mom 3.1":
+						global.curr_points++;
 						scr_text("*She lets out a soft laugh. It's bittersweet.*");
 						scr_text("You were so dramatic.");
 						scr_text("I'd give anything to go back. Just to fix things with you.");
@@ -180,6 +223,7 @@ function scr_game_text(_text_id){
 				
 					#region //mom 3.3
 					case "mom 3.3":
+						global.curr_points--;
 						scr_text("I'm sorry.");
 						scr_text("I'm just trying to hold on to something... anything.");
 					
@@ -201,9 +245,16 @@ function scr_game_text(_text_id){
 						
 						#region //mom 4.1
 						case "mom 4.1":
+							global.curr_points++;
 							scr_text("It still doesn't feel like enough.");
 							scr_text("I should've known. I should've done more.");
-							//curr_points++;
+							
+							if (global.curr_points >= 3) {
+								scr_option("I love you, mom.", "mom good");
+							}
+							else {
+								scr_option("Goodbye, mom.", "mom bad");
+							}
 							break;
 							#endregion
 					
@@ -211,16 +262,62 @@ function scr_game_text(_text_id){
 						case "mom 4.2":
 							scr_text("But I blame myself every single day.");
 							scr_text("You deserved better than what I gave you.");
+							
+							if (global.curr_points >= 3) {
+								scr_option("I love you, mom.", "mom good");
+							}
+							else {
+								scr_option("Goodbye, mom.", "mom bad");
+							}
+							
 							break;
 							#endregion
 					
 						#region //mom 4.3
 						case "mom 4.3":
+							global.curr_points--;
 							scr_text("*She starts crying.*");
 							scr_text("I can't stop. I can't.");
 							scr_text("I should've done more for you.");
-							//curr_points--;
+							
+							if (global.curr_points >= 3) {
+								scr_option("I love you, mom.", "mom good");
+							}
+							else {
+								scr_option("Goodbye, mom.", "mom bad");
+							}
+							
 							break;
+							#endregion
+						
+						#region //endings
+						case "mom good":
+							scr_text("*Her voice breaks, and you can tell she is trying to be strong.*");
+							scr_text("I love you too, sweetheart.");
+							scr_text("I... I don't know how to do this.");
+							scr_text("I wish I could be there with you right now.");
+							scr_text("*You hear her take a deep breath.*");
+							scr_text("You've been so strong through all of this.");
+							scr_text("It's okay. You don't have to fight anymore.");
+							scr_text("I'll hold onto every memory. Every moment we shared.");
+							scr_text("You brought so much light into my life.");
+							scr_text("*She cries quietly.*");
+							scr_text("Goodbye, my precious baby.");
+							scr_text("I'll love you forever.");
+								global.mom_done = true;
+								scr_option("I love you. Goodbye.", "room done");
+								break;
+						
+						case "mom bad":
+							scr_text("*She begins crying, begging through her tears.*");
+							scr_text("No, no-please don't hang up. Please don't...");
+							scr_text("Don't leave me.");
+							scr_text("Don't say goodbye.");
+							scr_text("Please!");
+								global.mom_done = true;
+								scr_option("Goodbye.", "room done");
+								break;
+						
 							#endregion
 					
 						#endregion //mom options 4
