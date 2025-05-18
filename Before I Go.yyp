@@ -31,7 +31,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.0.190",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"Before I Go",
   "resources":[
@@ -44,6 +44,7 @@
     {"id":{"name":"obj_button_play","path":"objects/obj_button_play/obj_button_play.yy",},},
     {"id":{"name":"obj_call_contact","path":"objects/obj_call_contact/obj_call_contact.yy",},},
     {"id":{"name":"obj_dialog_cutscene","path":"objects/obj_dialog_cutscene/obj_dialog_cutscene.yy",},},
+    {"id":{"name":"obj_fader","path":"objects/obj_fader/obj_fader.yy",},},
     {"id":{"name":"obj_phone_button","path":"objects/obj_phone_button/obj_phone_button.yy",},},
     {"id":{"name":"obj_phone_ui","path":"objects/obj_phone_ui/obj_phone_ui.yy",},},
     {"id":{"name":"obj_text_credits","path":"objects/obj_text_credits/obj_text_credits.yy",},},
@@ -57,8 +58,10 @@
     {"id":{"name":"rm_morning","path":"rooms/rm_morning/rm_morning.yy",},},
     {"id":{"name":"rm_night","path":"rooms/rm_night/rm_night.yy",},},
     {"id":{"name":"scr_dialogue","path":"scripts/scr_dialogue/scr_dialogue.yy",},},
+    {"id":{"name":"scr_fadeInfadeOut","path":"scripts/scr_fadeInfadeOut/scr_fadeInfadeOut.yy",},},
     {"id":{"name":"scr_game_text","path":"scripts/scr_game_text/scr_game_text.yy",},},
     {"id":{"name":"scr_text_functions","path":"scripts/scr_text_functions/scr_text_functions.yy",},},
+    {"id":{"name":"spr_1_x_1_black","path":"sprites/spr_1_x_1_black/spr_1_x_1_black.yy",},},
     {"id":{"name":"spr_arrow_option","path":"sprites/spr_arrow_option/spr_arrow_option.yy",},},
     {"id":{"name":"spr_bg_afternoon","path":"sprites/spr_bg_afternoon/spr_bg_afternoon.yy",},},
     {"id":{"name":"spr_bg_credits","path":"sprites/spr_bg_credits/spr_bg_credits.yy",},},
