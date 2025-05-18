@@ -52,7 +52,11 @@ function scr_game_text(_text_id){
 		
 		#region mom dialogue 
 		case "mom":
-			
+			scr_text("*She tried so hard to protect me.*");
+			scr_text("*Part of her still believes she can fix this.*");
+			scr_text("*I don't know how to tell her she can't.*");
+			scr_text("...");
+
 			#region //mom 1
 			scr_text("Hello? Sweetheart?");
 			scr_text("Oh...");
@@ -615,10 +619,10 @@ function scr_game_text(_text_id){
 		#region ex dialogue
 		case "ex":
 			scr_text("*My ex.*");
-			scr_text("There's a reason their contact name is \"DO NOT CALL.\"");
-			scr_text("I told myself I wouldn't...");
-			scr_text("...but I need to hear it from them.");
-			scr_text("Whether or not they ever really cared.");
+			scr_text("*There's a reason their contact name is \"DO NOT CALL.\"*");
+			scr_text("*I told myself I wouldn't...*");
+			scr_text("*...but I need to hear it from them.*");
+			scr_text("*Whether or not they ever really cared.*");
 			
 			scr_text("...");
 			scr_text("I knew you'd come crawling back.");
@@ -630,9 +634,7 @@ function scr_game_text(_text_id){
 				scr_option("I thought maybe you'd want to know how I was.", "ex 1.3");
 				break;
 			
-			
 			//options 1
-			
 			#region ex 1.1
 			case "ex 1.1":
 				global.curr_points++;
@@ -691,8 +693,7 @@ function scr_game_text(_text_id){
 					break;
 					
 				#endregion ex 1.3
-			
-				
+					
 				//options 2
 					
 				#region ex 2.1
@@ -705,7 +706,12 @@ function scr_game_text(_text_id){
 					scr_text("Even now, you're calling me of all people.");
 
 					#region ex 3
-					
+					scr_text("Remember the cabin? The weekend by the lake?");
+					scr_text("You looked at me like I was your entire world.");
+					scr_text("Don't act like none of it was real.");
+						scr_option("I remember. I was happy, once.", "ex 3.1");
+						scr_option("I thought I was happy.", "ex 3.2");
+						scr_option("That wasn't real. I just wanted it to be.", "ex 3.3");
 						#endregion ex 3
 						break;
 					
@@ -718,7 +724,12 @@ function scr_game_text(_text_id){
 					scr_text("Let's not pretend that you hated it.");
 					
 					#region ex 3
-					
+					scr_text("Remember the cabin? The weekend by the lake?");
+					scr_text("You looked at me like I was your entire world.");
+					scr_text("Don't act like none of it was real.");
+						scr_option("I remember. I was happy, once.", "ex 3.1");
+						scr_option("I thought I was happy.", "ex 3.2");
+						scr_option("That wasn't real. I just wanted it to be.", "ex 3.3");
 						#endregion ex 3
 						break;
 					
@@ -731,28 +742,96 @@ function scr_game_text(_text_id){
 					scr_text("You were already ruined when I found you.");
 					scr_text("I just stopped pretending I could fix you.");
 
-					
 					#region ex 3
-					
-					
+					scr_text("Remember the cabin? The weekend by the lake?");
+					scr_text("You looked at me like I was your entire world.");
+					scr_text("Don't act like none of it was real.");
+						scr_option("I remember. I was happy, once.", "ex 3.1");
+						scr_option("I thought I was happy.", "ex 3.2");
+						scr_option("That wasn't real. I just wanted it to be.", "ex 3.3");
 						#endregion ex 3
 						break;
 					
 					#endregion ex 2.3
 
-				
 					//options 3
-					
-						scr_option("", "ex 3.1");
-						scr_option("", "ex 3.2");
-						scr_option("", "ex 3.3");
-					
-						//options 4
+					#region ex 3.1
+					case "ex 3.1":
+						global.curr_points++;
+						scr_text("Yeah. You were.");
+						scr_text("That's the version of you I liked.");
+						scr_text("The one who needed me.");
+						scr_text("The one who didn't talk back.");
 						
-							scr_option("", "ex 4.1");
-							scr_option("", "ex 4.2");
-							scr_option("", "ex 4.3");
+						if (global.curr_points >= 3) {
+							scr_option("I don't regret leaving.", "ex good");
+						}
+						else {
+							scr_option("I'm sorry.", "ex bad");
+						}
+
+						break;
+					
+						#endregion ex 3.1
+				
+					#region ex 3.2
+					case "ex 3.2":
+						scr_text("Maybe you were.");
+						scr_text("Or maybe you just liked the attention.");
+						scr_text("You never did know what you wanted.");
 						
+						if (global.curr_points >= 3) {
+							scr_option("I don't regret leaving.", "ex good");
+						}
+						else {
+							scr_option("I'm sorry.", "ex bad");
+						}
+						
+						break;
+					
+						#endregion ex 3.2
+				
+					#region ex 3.3
+					case "ex 3.3":
+						global.curr_points--;
+						scr_text("Right, here we go again.");
+						scr_text("Now I'm the villain.");
+						scr_text("You always do this.");
+						
+						if (global.curr_points >= 3) {
+							scr_option("I don't regret leaving.", "ex good");
+						}
+						else {
+							scr_option("I'm sorry.", "ex bad");
+						}
+						
+						break;
+					
+						#endregion ex 3.3
+					
+					//endings
+					#region ex good
+					case "ex good":
+						scr_text("What's that supposed to mean?");
+						scr_text("You think you're above me now?");
+						scr_text("You wouldn't even exist without me.");
+						scr_text("*They continue ranting, but you stop listening.*");
+						scr_text("*You hang up.*");
+						scr_text("*For once, the silence is welcome.*");
+							global.ex_done = true;
+							scr_option("...", "room done");
+							break;
+						#endregion ex good
+					
+					#region ex bad
+					case "ex bad":
+						scr_text("Of course you are.");
+						scr_text("You always were.");
+						scr_text("Just how I like it.");
+							global.ex_done = true;
+							scr_option("...", "room done");
+							break;
+						#endregion ex bad
 			
 			break;
 		#endregion
