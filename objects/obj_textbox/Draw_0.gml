@@ -1,13 +1,13 @@
 accept_key = mouse_check_button_pressed(mb_left);
 
 textbox_x = camera_get_view_x(view_camera[0]);
-textbox_y = camera_get_view_y(view_camera[0]) + 800; //800 = offset from top of screen
+textbox_y = camera_get_view_y(view_camera[0]) + 750; //800 = offset from top of screen
 
 
 //--------- setup before drawing ---------
 if (setup == false) {
 	setup = true;
-	draw_set_font(font_VT323_pt40);
+	draw_set_font(font_VT323_pt30);
 	draw_set_valign(fa_top);
 	draw_set_halign(fa_left);
 	
@@ -83,7 +83,7 @@ if (draw_char == text_length[page]) && (page == page_number - 1) {
 		
 		//draw the arrow
 		if (option_pos == op) {
-			draw_sprite(spr_arrow_option, 0, _txtb_x, _txtb_y - _op_space * option_number + _op_space * op);
+			draw_sprite(spr_arrow_option, 0, _txtb_x + 10, _txtb_y - _op_space * option_number + _op_space * op + 20);
 		}
 		
 		//draw option text

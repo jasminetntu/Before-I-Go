@@ -31,10 +31,11 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.1.193",
+    "IDEVersion":"2024.13.0.190",
   },
   "name":"Before I Go",
   "resources":[
+    {"id":{"name":"font_VT323_pt30","path":"fonts/font_VT323_pt30/font_VT323_pt30.yy",},},
     {"id":{"name":"font_VT323_pt40","path":"fonts/font_VT323_pt40/font_VT323_pt40.yy",},},
     {"id":{"name":"obj_button_backToMain","path":"objects/obj_button_backToMain/obj_button_backToMain.yy",},},
     {"id":{"name":"obj_button_credits","path":"objects/obj_button_credits/obj_button_credits.yy",},},
