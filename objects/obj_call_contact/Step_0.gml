@@ -11,16 +11,16 @@ if (global.room_done == true) {
 	if (global.mom_done == true) && (text_id == "mom") {
 		instance_destroy();
 	}
-	else if (global.brother_done == true) && (text_id == "brother") {
+	if (global.brother_done == true) && (text_id == "brother") {
 		instance_destroy();
 	}
-	else if (global.ex_done == true) && (text_id == "ex") {
+	if (global.ex_done == true) && (text_id == "ex") {
 		instance_destroy();
 	}
-	else if (global.boss_done == true) && (text_id == "boss") {
+	if (global.boss_done == true) && (text_id == "boss") {
 		instance_destroy();
 	}
-	else if (global.best_friend_done == true) && (text_id == "best friend") {
+	if (global.best_friend_done == true) && (text_id == "best friend") {
 		instance_destroy();
 	}
 	

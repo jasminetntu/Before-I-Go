@@ -4,7 +4,7 @@ function scr_game_text(_text_id){
 	
 	switch (_text_id) {
 		
-		#region //room done
+		#region room done
 		case "room done":
 			global.curr_points = 0; //reset points
 			global.room_done = true; //to move to next room
@@ -12,7 +12,7 @@ function scr_game_text(_text_id){
 			break;
 			#endregion //room done
 		
-		#region //------------- beginning cutscene ------------- 
+		#region beginning cutscene 
 		case "cutscene":
 			scr_text("Dear.");
 				scr_option("...", "cutscene 1");
@@ -47,9 +47,10 @@ function scr_game_text(_text_id){
 						break;
 		
 			#endregion //cutscene
+
+//-----------------------------------------------------------------------------------
 		
-		
-		#region //------------- mom dialogue ------------- 
+		#region mom dialogue 
 		case "mom":
 			
 			#region //mom 1
@@ -335,12 +336,12 @@ function scr_game_text(_text_id){
 		#endregion
 
 //-----------------------------------------------------------------------------------
-		#region //------------- brother dialogue ------------- 
+
+		#region brother dialogue 
 		case "brother":
-			//inner dialogue
 			scr_text("*You haven't spoken to him in years.*");
-			scr_text("*You wonder if he’ll ever forgive you.*");
-			scr_text("*But you have to try before it’s too late.*");
+			scr_text("*You wonder if he'll ever forgive you.*");
+			scr_text("*But you have to try before it's too late.*");
 			
 			scr_text("...");
 			scr_text("Who the hell is this?");
@@ -354,19 +355,19 @@ function scr_game_text(_text_id){
 			case "brother 1.1":
 				global.curr_points++;
 				scr_text("Oh. It's you.");
-				scr_text("Christ. You’ve got some nerve.");
-				scr_text("Didn’t think you’d actually call-not after everything.");
-				scr_text("You really think I’d just pick up like nothing happened?");
+				scr_text("Christ. You've got some nerve.");
+				scr_text("Didn't think you'd actually call- not after everything.");
+				scr_text("You really think I'd just pick up like nothing happened?");
 				
 				#region //brother 2
-				scr_text("You skipped Dad’s funeral, then skipped town.");
+				scr_text("You skipped Dad' s funeral, then skipped town.");
 				scr_text("The only reason I knew you were alive was because Mom kept calling me.");
 				scr_text("It was pathetic.");
 					scr_option("I'm sorry for not being there.", "brother 2.1");
 					scr_option("I couldn't handle it.", "brother 2.2");
 					scr_option("I didn't think you'd want me there.", "brother 2.3");
-					break;
 					#endregion //brother 2
+					break;
 
 				#endregion //brother 1.1
 			
@@ -377,16 +378,15 @@ function scr_game_text(_text_id){
 				scr_text("You're lucky I even remember who you are.");
 				
 				#region //brother 2
-				scr_text("You skipped Dad’s funeral, then skipped town.");
+				scr_text("You skipped Dad's funeral, then skipped town.");
 				scr_text("The only reason I knew you were alive was because Mom kept calling me.");
 				scr_text("It was pathetic.");
 					scr_option("I'm sorry for not being there.", "brother 2.1");
 					scr_option("I couldn't handle it.", "brother 2.2");
 					scr_option("I didn't think you'd want me there.", "brother 2.3");
-					break;
 					#endregion //brother 2
-				
-				break;
+					break;
+					
 				#endregion //brother 1.2
 				
 			#region //brother 1.3
@@ -397,14 +397,14 @@ function scr_game_text(_text_id){
 				scr_text("Figured you were gone for good.");
 				
 				#region //brother 2
-				scr_text("You skipped Dad’s funeral, then skipped town.");
+				scr_text("You skipped Dad's funeral, then skipped town.");
 				scr_text("The only reason I knew you were alive was because Mom kept calling me.");
 				scr_text("It was pathetic.");
 					scr_option("I'm sorry for not being there.", "brother 2.1");
 					scr_option("I couldn't handle it.", "brother 2.2");
 					scr_option("I didn't think you'd want me there.", "brother 2.3");
-					break;
 					#endregion //brother 2
+					break;
 					
 				#endregion //brother 1.3
 			
@@ -444,6 +444,7 @@ function scr_game_text(_text_id){
 							scr_option("I'm... in the hospital.", "brother 3.2");
 							scr_option("It doesn't matter.", "brother 3.3");
 							#endregion brother 3
+							break;
 					
 					#endregion //brother 2.2
 				
@@ -508,8 +509,8 @@ function scr_game_text(_text_id){
 					#region //brother 3.3
 					case "brother 3.3":
 						global.curr_points--;
-						scr_text("The hell it doesn’t.");
-						scr_text("You don’t get to just- drop that bombshell,");
+						scr_text("The hell it doesn't.");
+						scr_text("You don't get to just- drop that bombshell,");
 						scr_text("and expect me to brush it off??");
 						
 						#region brother 4
@@ -547,7 +548,7 @@ function scr_game_text(_text_id){
 						case "brother 4.2":
 							scr_text("Of course you are.");
 							scr_text("You always wait until the last second.");
-							scr_text("I just wish this wasn’t all we had left.");
+							scr_text("I just wish this wasn't all we had left.");
 							
 							if (global.curr_points >= 3) {
 								scr_option("I love you.", "brother good");
@@ -594,7 +595,6 @@ function scr_game_text(_text_id){
 								break;
 							#endregion brother good
 							
-							
 						#region brother bad
 						case "brother bad":
 							scr_text("Seriously? That's it?");
@@ -606,27 +606,31 @@ function scr_game_text(_text_id){
 								scr_option("...", "room done");
 								break;
 							#endregion brother bad
-						
-						
-						
+		
 			break;
 		#endregion
-			
-		#region //ex dialogue
+
+//-----------------------------------------------------------------------------------	
+		
+		#region ex dialogue
 		case "ex":
 		
 		
 			break;
 		#endregion
 		
-		#region //boss dialogue
+//-----------------------------------------------------------------------------------
+		
+		#region boss dialogue
 		case "boss":
 		
 		
 			break;
 		#endregion
 		
-		#region //best friend dialogue
+//-----------------------------------------------------------------------------------
+		
+		#region best friend dialogue
 		case "best friend":
 		
 		
