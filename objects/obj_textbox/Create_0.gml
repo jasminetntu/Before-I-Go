@@ -13,11 +13,17 @@ textbox_img_spd = 0;
 //the text
 page = 0; //what "page"/sequence of dialogue we're on
 page_number = 0; //initial total pages = 0
-text[0] = "hello"; //text that will actually appear on screen
-text[1] = "world!";
+text[0] = "";
 text_length[0] = string_length(text[0]); //stores # of chars in text
 draw_char = 0; //indicates how many chars are being drawn currently (for typing effect)
 text_spd = 0.3; //speed
+
+//user options/choices
+option[0] = ""; //the actual option text
+option_link_id[0] = -1; //the id to reference in script
+option_pos = 0; //start position of option at 0... might change bc we want left click
+option_number = 0;
+
 
 setup = false;
 
