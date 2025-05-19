@@ -3,6 +3,7 @@ accept_key = keyboard_check_pressed(vk_space);
 
 textbox_x = camera_get_view_x(view_camera[0]);
 textbox_y = camera_get_view_y(view_camera[0]) + 750; //800 = offset from top of screen
+//text_x_offset[0] = 320; //testing
 
 #region //--------- setup before drawing ---------
 if (setup == false) {

@@ -974,7 +974,7 @@ function scr_game_text(_text_id){
                     scr_text("I mean that.");
                     scr_text("Take care of yourself.");
                         global.boss_done = true;
-                        scr_option("Thank you.", "room end");
+                        scr_option("Thank you.", "room done");
                         break;
 
                     #endregion boss good
@@ -987,7 +987,7 @@ function scr_game_text(_text_id){
                     scr_text("...Good luck.");
                     scr_text("I hope this gave you what you needed.");
                         global.boss_done = true;
-                        scr_option("...", "room end");
+                        scr_option("...", "room done");
                         break;
 
                     #endregion boss bad
@@ -996,12 +996,242 @@ function scr_game_text(_text_id){
 		
 //-----------------------------------------------------------------------------------
 		
-		#region best friend dialogue
-		case "best friend":
-		
-		
-			break;
-		#endregion
+        #region best friend dialogue
+        case "best friend":
+            scr_text("*They know.*");
+            scr_text("*They keep joking like everything's fine.*");
+            scr_text("*Maybe that's what I need right now.*");
+            scr_text("*Maybe they do, too.*");
+            scr_text("...");
+
+            scr_text("Hey, silly!"); 
+            scr_text("Didn't expect to hear from you.");
+            scr_text("You okay? Everything alright?");
+                scr_option("...No. I'm really scared.", "best friend 1.1");
+                scr_option("I'm fine. Really.", "best friend 1.2");
+                scr_option("It's not your problem.", "best friend 1.3");
+                break;
+
+            //options 1
+            #region best friend 1.1
+            case "best friend 1.1":
+                global.curr_points++;
+                scr_text("...Yeah.");
+                scr_text("I figured.");
+                scr_text("You don't have to go through this alone, okay?");
+                scr_text("I'm here.");
+                scr_text("Unless you start crying, I might hang up.");
+                scr_text("Kidding.");
+                scr_text(".....Mostly.");
+
+                #region best friend 2
+                scr_text("Remember those nights we stayed up too late?");
+                scr_text("Talking about everything we were gonna do together someday?");
+                scr_text("We were gonna road trip across the country,");
+                scr_text("and hit upevery weird themed diner we could find.");
+                    scr_option("Remember when we used to talk about growing old?", "best friend 2.1");
+                    scr_option("Yeah, it's funny, right?", "best friend 2.2");
+                    scr_option("Those dreams were stupid.", "best friend 2.3");
+                    #endregion best friend 2
+                    break;
+
+                #endregion best friend 1.1
+
+            #region best friend 1.2
+            case "best friend 1.2":
+                scr_text("Uh-huh.");
+                scr_text("I'll play along if that's what you want.");
+                scr_text("But you don't have to pretend. Not with me.");
+
+                #region best friend 2
+                scr_text("Remember those nights we stayed up too late?");
+                scr_text("Talking about everything we were gonna do together someday?");
+                scr_text("We were gonna road trip across the country,");
+                scr_text("and hit upevery weird themed diner we could find.");
+                    scr_option("Remember when we used to talk about growing old?", "best friend 2.1");
+                    scr_option("Yeah, it's funny, right?", "best friend 2.2");
+                    scr_option("Those dreams were stupid.", "best friend 2.3");
+                    #endregion best friend 2
+                    break;
+
+                #endregion best friend 1.2
+
+            #region best friend 1.3
+            case "best friend 1.3":
+                global.curr_points--;
+                scr_text("Nuh-uh.");
+                scr_text("Absolutely not.");
+                scr_text("Do you think I stuck around this long out of guilt?");
+                scr_text("You matter.");
+                scr_text("Whether you like it or not.");
+
+                #region best friend 2
+                scr_text("Remember those nights we stayed up too late?");
+                scr_text("Talking about everything we were gonna do together someday?");
+                scr_text("We were gonna road trip across the country,");
+                scr_text("and hit upevery weird themed diner we could find.");
+                    scr_option("Remember when we used to talk about growing old?", "best friend 2.1");
+                    scr_option("Yeah, it's funny, right?", "best friend 2.2");
+                    scr_option("Those dreams were stupid.", "best friend 2.3");
+                    #endregion best friend 2
+                    break;
+
+                #endregion best friend 1.3
+
+                //options 2
+                #region best friend 2.1
+                case "best friend 2.1":
+                    global.curr_points++;
+                    scr_text("*She laughs.*");
+                    scr_text("*You can tell she is masking her sadness.*");
+                    scr_text("Only all the time!");
+                    scr_text("We would get matching rocking chairs and yell at kids to get off our lawn.");
+                    scr_text("Still planning on it, by the way.");
+                    scr_text("Even if I have to do the yelling for both of us.");
+
+                    #region best friend 3
+                    scr_text("...I've been trying to keep it light, you know?");
+                    scr_text("Figured if I joked enough, maybe this heartache would go away.");
+                    scr_text("Maybe it wouldn't feel so heavy.");
+                        scr_option("You don't have to do that with me.", "best friend 3.1");
+                        scr_option("I get it. I've been doing the same.", "best friend 3.2");
+                        scr_option("It's not helping.", "best friend 3.3");
+                        #endregion best friend 3
+                        break;
+
+                    #endregion best friend 2.1
+
+                #region best friend 2.2
+                case "best friend 2.2":
+                    scr_text("\"Funny\" is one word for it.");
+                    scr_text("But, hey, dark humor's kind of our thing.");
+                    scr_text("...I'll laugh if you do");
+
+                    #region best friend 3
+                    scr_text("...I've been trying to keep it light, you know?");
+                    scr_text("Figured if I joked enough, maybe this heartache would go away.");
+                    scr_text("Maybe it wouldn't feel so heavy.");
+                        scr_option("You don't have to do that with me.", "best friend 3.1");
+                        scr_option("I get it. I've been doing the same.", "best friend 3.2");
+                        scr_option("It's not helping.", "best friend 3.3");
+                        #endregion best friend 3
+                        break;
+
+                    #endregion best friend 2.2
+
+                #region best friend 2.3
+                case "best friend 2.3":
+                    global.curr_points--;
+                    scr_text("Hey!");
+                    scr_text("They weren't stupid!");
+                    scr_text("They were ours.");
+                    scr_text("Even if those dreams can't come true now...");
+                    scr_text("They still... meant something.");
+    
+                    #region best friend 3
+                    scr_text("...I've been trying to keep it light, you know?");
+                    scr_text("Figured if I joked enough, maybe this heartache would go away.");
+                    scr_text("Maybe it wouldn't feel so heavy.");
+                        scr_option("You don't have to do that with me.", "best friend 3.1");
+                        scr_option("I get it. I've been doing the same.", "best friend 3.2");
+                        scr_option("It's not helping.", "best friend 3.3");
+                        #endregion best friend 3
+                        break;
+
+                    #endregion best friend 2.3
+
+                    //options 3
+                    #region best friend 3.1
+                    case "best friend 3.1":
+                        global.curr_points++;
+                        scr_text("...Okay.");
+                        scr_text("Thank you.");
+                        scr_text("*She sounds like she could fall apart any second.*");
+                        scr_text("It's honestly been... really hard.");
+                        scr_text("But if you're being honest with me, I want to be honest with you, too.");
+
+                        if (global.curr_points >= 3) {
+                            scr_option("Thanks for being here.", "best friend good");
+                        }
+                        else {
+                            scr_option("I should go.", "best friend bad");
+                        }
+
+                        break;
+
+                        #endregion best friend 3.1
+
+                    #region best friend 3.2
+                    case "best friend 3.2":
+                        scr_text("Yeah?");
+                        scr_text("Guess we're both full of it.");
+                        scr_text("Maybe we should try being honest for once.");
+
+                        if (global.curr_points >= 3) {
+                            scr_option("Thanks for being here.", "best friend good");
+                        }
+                        else {
+                            scr_option("I should go.", "best friend bad");
+                        }
+
+                        break;
+
+                        #endregion best friend 3.2
+
+                    #region best friend 3.3
+                    case "best friend 3.3":
+                        global.curr_points--;
+                        scr_text("Okay.");
+                        scr_text("I'm sorry.");
+                        scr_text("I didn't mean to make it worse.");
+                        scr_text("I just...");
+                        scr_text("...didn't want this to hurt more than it already does.");
+
+                        if (global.curr_points >= 3) {
+                            scr_option("Thanks for being here.", "best friend good");
+                        }
+                        else {
+                            scr_option("I should go.", "best friend bad");
+                        }
+
+                        break;
+
+                        #endregion best friend 3.3
+
+                    //endings
+                    #region best friend good
+                    case "best friend good":
+                        scr_text("Always.");
+                        scr_text("Even when things got hard, I never stopped being your friend.");
+                        scr_text("You don't have to do this alone.");
+                        scr_text("Not now.");
+                        scr_text("We've got whatever time's left.");
+                        scr_text("I love you, okay?");
+                        scr_text("And I'm not going anywhere.");
+                        scr_text("See you later, alligator.");
+                            global.best_friend_done = true;
+                            scr_option("See you.", "room done");
+                            break;
+                        #endregion best friend good
+
+                    #region best friend bad
+                    case "best friend bad":
+                        scr_text("Yeah... Yeah, okay.");
+                        scr_text("Catch you later.");
+                        scr_text("In a while, crocodile.");
+                        scr_text("*She lets out a pained laugh.*");
+                        scr_text("Take care of yourself, all right?");
+                        scr_text("Talk soon.");
+                        scr_text("Promise.");
+                            global.best_friend_done = true;
+                            scr_option("Okay.", "room done");
+                            break;
+
+
+                        break;
+                        #endregion best friend bad
+
+        #endregion best friend 
 		
 		
 	}
