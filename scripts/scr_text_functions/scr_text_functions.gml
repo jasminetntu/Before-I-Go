@@ -1,8 +1,41 @@
+function scr_set_defaults_for_text() {
+	//he has some stuff here for text anim i think
+	
+	textbox_spr[page_number] = spr_dialogue_bg;
+	speaker_sprite[page_number] = noone;
+	speaker_side[page_number] = 1;
+}
+
+
 
 //adds line of text to dialogue sequence
 /// @param text
+/// @param [character] (optional sprite)
 function scr_text(_text){
+	scr_set_defaults_for_text();
 	text[page_number] = _text;
+	
+	//get character info
+	if (argument_count > 1) {
+		switch (argument[1]) {
+			case "mom":
+			speaker_sprite[page_number] = spr_icon_mom;
+				break;
+			case "brother":
+			speaker_sprite[page_number] = spr_icon_brother;
+				break;
+			case "ex":
+			speaker_sprite[page_number] = spr_icon_ex;
+				break;
+			case "boss":
+			speaker_sprite[page_number] = spr_icon_boss;
+				break;
+			case "best friend":
+			speaker_sprite[page_number] = spr_icon_bestFriend;
+				break;
+		}
+	}
+	
 	page_number++;
 }
 

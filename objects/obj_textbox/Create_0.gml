@@ -1,4 +1,4 @@
-depth = -9999;
+kkkkdepth = -9999;
 
 //textbox parameters
 textbox_width = 1000;
@@ -6,7 +6,7 @@ textbox_height = 230;
 border = 50; //distance from sides of textbox
 line_sep = 65; //separation between lines
 line_width = textbox_width - (border * 2); //max length of text before moving to next line
-textbox_spr = spr_dialogue_bg;
+textbox_spr[0] = spr_dialogue_bg;
 textbox_img = 0;
 textbox_img_spd = 0;
 
