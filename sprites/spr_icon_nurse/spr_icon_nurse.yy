@@ -3,8 +3,8 @@
   "%Name":"spr_icon_nurse",
   "bboxMode":0,
   "bbox_bottom":199,
-  "bbox_left":0,
-  "bbox_right":199,
+  "bbox_left":20,
+  "bbox_right":179,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"801dfe9d-c86a-4f18-a5ab-265b978f78a1","name":"801dfe9d-c86a-4f18-a5ab-265b978f78a1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"b5deee8b-a188-435a-a91e-1b9d3b0f0c0b","name":"b5deee8b-a188-435a-a91e-1b9d3b0f0c0b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":200,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"724ba752-078a-4c40-9860-dac59dd894e3","blendMode":0,"displayName":"default","isLocked":false,"name":"724ba752-078a-4c40-9860-dac59dd894e3","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"f4048fd9-e646-4c06-a7e6-675c8891ddb5","blendMode":0,"displayName":"default","isLocked":false,"name":"f4048fd9-e646-4c06-a7e6-675c8891ddb5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_icon_nurse",
   "nineSlice":null,
@@ -71,8 +71,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"801dfe9d-c86a-4f18-a5ab-265b978f78a1","path":"sprites/spr_icon_nurse/spr_icon_nurse.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2d15e62d-4c98-4eea-83e8-3781191050e8","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b5deee8b-a188-435a-a91e-1b9d3b0f0c0b","path":"sprites/spr_icon_nurse/spr_icon_nurse.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"11a22122-bf7a-4e9f-8b70-86daa943f7aa","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
