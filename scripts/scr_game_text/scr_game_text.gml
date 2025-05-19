@@ -14,29 +14,29 @@ function scr_game_text(_text_id){
 		
 		#region beginning cutscene 
 		case "cutscene":
-			scr_text("Dear.");
+			scr_text("Dear.", "nurse");
 				scr_option("...", "cutscene 1");
 				break;
 				
 				case "cutscene 1":
-					scr_text("I'm sorry.");
+					scr_text("I'm sorry.", "nurse");
 						scr_option("...", "cutscene 2");
 						break;
 					
 				case "cutscene 2":
-					scr_text("I know it's hard to accept...");
-					scr_text("...and I wish we could've done more to save you.");
-					scr_text("But you won't last another day.");
-					scr_text("A few more hours at best.");
-					scr_text("Your body is very weak right now.");
-					scr_text("But I hope you make the most of your time here.");
+					scr_text("I know it's hard to accept...", "nurse");
+					scr_text("...and I wish we could've done more to save you.", "nurse");
+					scr_text("But you won't last another day.", "nurse");
+					scr_text("A few more hours at best.", "nurse");
+					scr_text("Your body is very weak right now.", "nurse");
+					scr_text("But I hope you make the most of your time here.", "nurse");
 						scr_option("...", "cutscene 3");
 						break;
 				
 				case "cutscene 3":
 					scr_text("*Sighs*");
-					scr_text("I'll leave you alone, now.");
-					scr_text("*The nurse leaves, and you are left with your thoughts.*");
+					scr_text("I'll leave you alone, now.", "nurse");
+					scr_text("*The nurse leaves, and you are left with your thoughts.*", "nurse");
 					scr_text("...");
 					scr_text("...");
 					scr_text("I should call them.");

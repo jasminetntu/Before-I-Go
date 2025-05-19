@@ -18,6 +18,9 @@ function scr_text(_text){
 	//get character info
 	if (argument_count > 1) {
 		switch (argument[1]) {
+			case "nurse":
+			speaker_sprite[page_number] = spr_icon_nurse;
+				break;
 			case "mom":
 			speaker_sprite[page_number] = spr_icon_mom;
 				break;
