@@ -1,1 +1,0 @@
-music = snd_imdead;
