@@ -35,6 +35,7 @@
   },
   "name":"Before I Go",
   "resources":[
+    {"id":{"name":"font_jacquard12_pt120","path":"fonts/font_jacquard12_pt120/font_jacquard12_pt120.yy",},},
     {"id":{"name":"font_VT323_pt30","path":"fonts/font_VT323_pt30/font_VT323_pt30.yy",},},
     {"id":{"name":"font_VT323_pt40","path":"fonts/font_VT323_pt40/font_VT323_pt40.yy",},},
     {"id":{"name":"obj_button_backToMain","path":"objects/obj_button_backToMain/obj_button_backToMain.yy",},},
@@ -53,6 +54,7 @@
     {"id":{"name":"obj_phone_ui","path":"objects/obj_phone_ui/obj_phone_ui.yy",},},
     {"id":{"name":"obj_settings","path":"objects/obj_settings/obj_settings.yy",},},
     {"id":{"name":"obj_text_credits","path":"objects/obj_text_credits/obj_text_credits.yy",},},
+    {"id":{"name":"obj_text_title","path":"objects/obj_text_title/obj_text_title.yy",},},
     {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},},
     {"id":{"name":"obj_time","path":"objects/obj_time/obj_time.yy",},},
     {"id":{"name":"rm_afternoon","path":"rooms/rm_afternoon/rm_afternoon.yy",},},
@@ -91,6 +93,7 @@
     {"id":{"name":"spr_icon_nurse","path":"sprites/spr_icon_nurse/spr_icon_nurse.yy",},},
     {"id":{"name":"spr_phone_battery","path":"sprites/spr_phone_battery/spr_phone_battery.yy",},},
     {"id":{"name":"spr_phone_button","path":"sprites/spr_phone_button/spr_phone_button.yy",},},
+    {"id":{"name":"spr_phone_icon_title","path":"sprites/spr_phone_icon_title/spr_phone_icon_title.yy",},},
     {"id":{"name":"spr_phone_ui","path":"sprites/spr_phone_ui/spr_phone_ui.yy",},},
   ],
   "resourceType":"GMProject",
