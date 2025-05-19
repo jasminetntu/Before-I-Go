@@ -8,10 +8,10 @@ if (global.room_done == true) {
 	scr_fadeInfadeOut("next_room", 0.03, 0.02);
 	
 	//destroy contact if already talked with
-	if (global.mom_done == true) && (text_id == "mom") {
+	if (global.brother_done == true) && (text_id == "brother") {
 		instance_destroy();
 	}
-	if (global.brother_done == true) && (text_id == "brother") {
+	if (global.mom_done == true) && (text_id == "mom") {
 		instance_destroy();
 	}
 	if (global.ex_done == true) && (text_id == "ex") {
