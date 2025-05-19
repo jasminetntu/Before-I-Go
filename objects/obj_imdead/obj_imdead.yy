@@ -1,18 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_phone_ui",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_imdead",
+  "eventList":[],
   "managed":true,
-  "name":"obj_phone_ui",
+  "name":"obj_imdead",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
-  "persistent":true,
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -29,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_phone_ui",
-    "path":"sprites/spr_phone_ui/spr_phone_ui.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

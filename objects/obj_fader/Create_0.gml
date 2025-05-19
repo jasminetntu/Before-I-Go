@@ -1,7 +1,7 @@
 
 // Can be changed
 room_to_transform_into = rm_mainMenu;
-fade_in_speed = 0.0075;
+fade_in_speed = 0.03;
 fade_out_speed = 0.02;
 
 

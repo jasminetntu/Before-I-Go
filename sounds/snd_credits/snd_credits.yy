@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_music",
+  "%Name":"snd_credits",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":96.78474,
-  "name":"snd_music",
+  "duration":0.0,
+  "name":"snd_credits",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_music.mp3",
+  "soundFile":"snd_credits",
   "type":0,
-  "volume":0.1,
+  "volume":1.0,
 }
