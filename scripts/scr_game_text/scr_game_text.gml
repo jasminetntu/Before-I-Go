@@ -348,7 +348,7 @@ function scr_game_text(_text_id){
 			scr_text("*But you have to try before it's too late.*");
 			
 			scr_text("...");
-			scr_text("Who the hell is this?");
+			scr_text("Who the hell is this?", "brother");
 				scr_option("It's me.", "brother 1.1");
 				scr_option("You deleted my number?", "brother 1.2");
 				scr_option("I didn't think you'd answer.", "brother 1.3");
@@ -358,15 +358,15 @@ function scr_game_text(_text_id){
 			#region //brother 1.1
 			case "brother 1.1":
 				global.curr_points++;
-				scr_text("Oh. It's you.");
-				scr_text("Christ. You've got some nerve.");
-				scr_text("Didn't think you'd actually call- not after everything.");
-				scr_text("You really think I'd just pick up like nothing happened?");
+				scr_text("Oh. It's you.", "brother");
+				scr_text("Christ. You've got some nerve.", "brother");
+				scr_text("Didn't think you'd actually call- not after everything.", "brother");
+				scr_text("You really think I'd just pick up like nothing happened?", "brother");
 				
 				#region //brother 2
-				scr_text("You skipped Dad' s funeral, then skipped town.");
-				scr_text("The only reason I knew you were alive was because Mom kept calling me.");
-				scr_text("It was pathetic.");
+				scr_text("You skipped Dad' s funeral, then skipped town.", "brother");
+				scr_text("The only reason I knew you were alive was because Mom kept calling me.", "brother");
+				scr_text("It was pathetic.", "brother");
 					scr_option("I'm sorry for not being there.", "brother 2.1");
 					scr_option("I couldn't handle it.", "brother 2.2");
 					scr_option("I didn't think you'd want me there.", "brother 2.3");
@@ -377,14 +377,14 @@ function scr_game_text(_text_id){
 			
 			#region //brother 1.2
 			case "brother 1.2":
-				scr_text("What? You expected me to keep it?");
-				scr_text("You disappeared.");
-				scr_text("You're lucky I even remember who you are.");
+				scr_text("What? You expected me to keep it?", "brother");
+				scr_text("You disappeared.", "brother");
+				scr_text("You're lucky I even remember who you are.", "brother");
 				
 				#region //brother 2
-				scr_text("You skipped Dad's funeral, then skipped town.");
-				scr_text("The only reason I knew you were alive was because Mom kept calling me.");
-				scr_text("It was pathetic.");
+				scr_text("You skipped Dad' s funeral, then skipped town.", "brother");
+				scr_text("The only reason I knew you were alive was because Mom kept calling me.", "brother");
+				scr_text("It was pathetic.", "brother");
 					scr_option("I'm sorry for not being there.", "brother 2.1");
 					scr_option("I couldn't handle it.", "brother 2.2");
 					scr_option("I didn't think you'd want me there.", "brother 2.3");
@@ -396,14 +396,14 @@ function scr_game_text(_text_id){
 			#region //brother 1.3
 			case "brother 1.3":
 				global.curr_points--;
-				scr_text("*He lets out a dry laugh.*");
-				scr_text("Yeah, well, I didn't think you'd call.");
-				scr_text("Figured you were gone for good.");
+				scr_text("*He lets out a dry laugh.*", "brother");
+				scr_text("Yeah, well, I didn't think you'd call.", "brother");
+				scr_text("Figured you were gone for good.", "brother");
 				
 				#region //brother 2
-				scr_text("You skipped Dad's funeral, then skipped town.");
-				scr_text("The only reason I knew you were alive was because Mom kept calling me.");
-				scr_text("It was pathetic.");
+				scr_text("You skipped Dad' s funeral, then skipped town.", "brother");
+				scr_text("The only reason I knew you were alive was because Mom kept calling me.", "brother");
+				scr_text("It was pathetic.", "brother");
 					scr_option("I'm sorry for not being there.", "brother 2.1");
 					scr_option("I couldn't handle it.", "brother 2.2");
 					scr_option("I didn't think you'd want me there.", "brother 2.3");
@@ -416,15 +416,15 @@ function scr_game_text(_text_id){
 				#region //brother 2.1
 				case "brother 2.1":
 					global.curr_points++;
-					scr_text("*He lets out a soft exhale, as if he weren't expecting it.");
-					scr_text("Yeah... you messed up.");
-					scr_text("But at least you're owning it.");
-					scr_text("Doesn't mean I'm ready to forgive you.");
+					scr_text("*He lets out a soft exhale, as if he weren't expecting it.*");
+					scr_text("Yeah... you messed up.", "brother");
+					scr_text("But at least you're owning it.", "brother");
+					scr_text("Doesn't mean I'm ready to forgive you.", "brother");
 					
 					#region brother 3
-					scr_text("Wait.");
-					scr_text("You sound... different.");
-					scr_text("...Is something wrong with you?");
+					scr_text("Wait.", "brother");
+					scr_text("You sound... different.", "brother");
+					scr_text("...Is something wrong with you?", "brother");
 						scr_option("Yeah. It's... bad.", "brother 3.1");
 						scr_option("I'm... in the hospital.", "brother 3.2");
 						scr_option("It doesn't matter.", "brother 3.3");
@@ -435,19 +435,19 @@ function scr_game_text(_text_id){
 			
 				#region //brother 2.2
 				case "brother 2.2":
-					scr_text("Nobody could.");
-					scr_text("But at least we didn't run.");
-					scr_text("Mom fell apart. I planned the funeral alone.");
-					scr_text("You left us to deal with everything.");
+					scr_text("Nobody could.", "brother");
+					scr_text("But at least we didn't run.", "brother");
+					scr_text("Mom fell apart. I planned the funeral alone.", "brother");
+					scr_text("You left us to deal with everything.", "brother");
 
 					#region brother 3
-						scr_text("Wait.");
-						scr_text("You sound... different.");
-						scr_text("...Is something wrong with you?");
-							scr_option("Yeah. It's... bad.", "brother 3.1");
-							scr_option("I'm... in the hospital.", "brother 3.2");
-							scr_option("It doesn't matter.", "brother 3.3");
-							#endregion brother 3
+					scr_text("Wait.", "brother");
+					scr_text("You sound... different.", "brother");
+					scr_text("...Is something wrong with you?", "brother");
+						scr_option("Yeah. It's... bad.", "brother 3.1");
+						scr_option("I'm... in the hospital.", "brother 3.2");
+						scr_option("It doesn't matter.", "brother 3.3");
+						#endregion brother 3
 							break;
 					
 					#endregion //brother 2.2
@@ -455,17 +455,17 @@ function scr_game_text(_text_id){
 				#region //brother 2.3
 				case "brother 2.3":
 					global.curr_points--;
-					scr_text("Yeah, I didn't.");
-					scr_text("But Mom did.");
+					scr_text("Yeah, I didn't.", "brother");
+					scr_text("But Mom did.", "brother");
 					scr_text("*His voice rises. He sounds angry.*");
 					scr_text("*Hurt.*");
-					scr_text("I needed you, too.");
-					scr_text("...Even if I didn't say it back then.");
+					scr_text("I needed you, too.", "brother");
+					scr_text("...Even if I didn't say it back then.", "brother");
 					
 					#region brother 3
-					scr_text("Wait.");
-					scr_text("You sound... different.");
-					scr_text("...Is something wrong with you?");
+					scr_text("Wait.", "brother");
+					scr_text("You sound... different.", "brother");
+					scr_text("...Is something wrong with you?", "brother");
 						scr_option("Yeah. It's... bad.", "brother 3.1");
 						scr_option("I'm... in the hospital.", "brother 3.2");
 						scr_option("It doesn't matter.", "brother 3.3");
@@ -480,11 +480,11 @@ function scr_game_text(_text_id){
 					case "brother 3.1":
 						global.curr_points++;
 						scr_text("*He's quiet.*");
-						scr_text("...You should've told me sooner.");
+						scr_text("...You should've told me sooner.", "brother");
 						
 						#region brother 4
-						scr_text("Why now?");
-						scr_text("Why call me at all?");
+						scr_text("Why now?", "brother");
+						scr_text("Why call me at all?", "brother");
 							scr_option("Because I don't want it to end this way.", "brother 4.1");
 							scr_option("Because I'm out of time.", "brother 4.2");
 							scr_option("Because I felt guilty.", "brother 4.3");
@@ -495,13 +495,13 @@ function scr_game_text(_text_id){
 			
 					#region //brother 3.2
 					case "brother 3.2":
-						scr_text("You waited this long to tell me that?");
-						scr_text("Jesus.");
-						scr_text("No wonder mom kept calling me.");
+						scr_text("You waited this long to tell me that?", "brother");
+						scr_text("Jesus.", "brother");
+						scr_text("No wonder mom kept calling me.", "brother");
 						
 						#region brother 4
-						scr_text("Why now?");
-						scr_text("Why call me at all?");
+						scr_text("Why now?", "brother");
+						scr_text("Why call me at all?", "brother");
 							scr_option("Because I don't want it to end this way.", "brother 4.1");
 							scr_option("Because I'm out of time.", "brother 4.2");
 							scr_option("Because I felt guilty.", "brother 4.3");
@@ -513,13 +513,13 @@ function scr_game_text(_text_id){
 					#region //brother 3.3
 					case "brother 3.3":
 						global.curr_points--;
-						scr_text("The hell it doesn't.");
-						scr_text("You don't get to just- drop that bombshell,");
-						scr_text("and expect me to brush it off??");
+						scr_text("The hell it doesn't.", "brother");
+						scr_text("You don't get to just-", "brother");
+						scr_text("Drop that bombshell, and expect me to brush it off??", "brother");
 						
 						#region brother 4
-						scr_text("Why now?");
-						scr_text("Why call me at all?");
+						scr_text("Why now?", "brother");
+						scr_text("Why call me at all?", "brother");
 							scr_option("Because I don't want it to end this way.", "brother 4.1");
 							scr_option("Because I'm out of time.", "brother 4.2");
 							scr_option("Because I felt guilty.", "brother 4.3");
@@ -532,10 +532,10 @@ function scr_game_text(_text_id){
 						#region //brother 4.1
 						case "brother 4.1":
 							global.curr_points++;
-							scr_text("...");
-							scr_text("...Me neither, if I'm being honest.");
-							scr_text("I'm still mad.");
-							scr_text("But I never stopped caring.");
+							scr_text("...", "brother");
+							scr_text("...Me neither, if I'm being honest.", "brother");
+							scr_text("I'm still mad.", "brother");
+							scr_text("But I never stopped caring.", "brother");
 							
 							if (global.curr_points >= 3) {
 								scr_option("I love you.", "brother good");
@@ -550,9 +550,9 @@ function scr_game_text(_text_id){
 			
 						#region //brother 4.2
 						case "brother 4.2":
-							scr_text("Of course you are.");
-							scr_text("You always wait until the last second.");
-							scr_text("I just wish this wasn't all we had left.");
+							scr_text("Of course you are.", "brother");
+							scr_text("You always wait until the last second.", "brother");
+							scr_text("I just wish this wasn't all we had left.", "brother");
 							
 							if (global.curr_points >= 3) {
 								scr_option("I love you.", "brother good");
@@ -568,9 +568,9 @@ function scr_game_text(_text_id){
 						case "brother 4.3":
 							global.curr_points--;
 							scr_text("Guilt?");
-							scr_text("That's what brought you back?");
-							scr_text("Trying to clear your conscience?");
-							scr_text("It's a little late for that, don't you think?");
+							scr_text("That's what brought you back?", "brother");
+							scr_text("Trying to clear your conscience?", "brother");
+							scr_text("It's a little late for that, don't you think?", "brother");
 							
 							if (global.curr_points >= 3) {
 								scr_option("I love you.", "brother good");
@@ -586,14 +586,14 @@ function scr_game_text(_text_id){
 						#region brother good
 						case "brother good":
 							scr_text("*Silence fills the air. It is suffocating.*");
-							scr_text("You...");
-							scr_text("You can't do that.");
-							scr_text("You waited until the end to say that?");
-							scr_text("A part of me still resents you.");
-							scr_text("Might be that way for a while.");
-							scr_text("But I'll never stop loving you.");
-							scr_text("I just wish we had more time.");
-							scr_text("I'm glad you called.");
+							scr_text("You...", "brother");
+							scr_text("You can't do that.", "brother");
+							scr_text("You waited until the end to say that?", "brother");
+							scr_text("A part of me still resents you.", "brother");
+							scr_text("Might be that way for a while.", "brother");
+							scr_text("But I'll never stop loving you.", "brother");
+							scr_text("I just wish we had more time.", "brother");
+							scr_text("I'm glad you called.", "brother");
 								global.brother_done = true;
 								scr_option("...Bye.", "room done");
 								break;
@@ -601,11 +601,11 @@ function scr_game_text(_text_id){
 							
 						#region brother bad
 						case "brother bad":
-							scr_text("Seriously? That's it?");
-							scr_text("You come back just to disappear again?");
-							scr_text("You couldn't stick around long enough to make this right?");
-							scr_text("Whatever.");
-							scr_text("Hope whatever time you've got left is worth it.");
+							scr_text("Seriously? That's it?", "brother");
+							scr_text("You come back just to disappear again?", "brother");
+							scr_text("You couldn't stick around long enough to make this right?", "brother");
+							scr_text("Whatever.", "brother");
+							scr_text("Hope whatever time you've got left is worth it.", "brother");
 								global.brother_done = true;
 								scr_option("...", "room done");
 								break;
@@ -624,11 +624,11 @@ function scr_game_text(_text_id){
 			scr_text("*...but I need to hear it from them.*");
 			scr_text("*Whether or not they ever really cared.*");
 			
-			scr_text("...");
-			scr_text("I knew you'd come crawling back.");
-			scr_text("So? What do you want?");
-			scr_text("Don't pretend you didn't miss me.");
-			scr_text("Someone better be dying.");
+			scr_text("...", "ex");
+			scr_text("I knew you'd come crawling back.", "ex");
+			scr_text("So? What do you want?", "ex");
+			scr_text("Don't pretend you didn't miss me.", "ex");
+			scr_text("Someone better be dying.", "ex");
 				scr_option("I am dying.", "ex 1.1");
 				scr_option("I just needed to talk to someone.", "ex 1.2");
 				scr_option("I thought maybe you'd want to know how I was.", "ex 1.3");
@@ -639,15 +639,15 @@ function scr_game_text(_text_id){
 			case "ex 1.1":
 				global.curr_points++;
 				scr_text("*They snort.*");
-				scr_text("You serious?");
-				scr_text("You disappear for how long, then drop this on me?");
-				scr_text("You were always a mess.");
-				scr_text("Part of me isn't even surprised.");
+				scr_text("You serious?", "ex");
+				scr_text("You disappear for how long, then drop this on me?", "ex");
+				scr_text("You were always a mess.", "ex");
+				scr_text("Part of me isn't even surprised.", "ex");
 
 				#region ex 2
-				scr_text("You think just showing up again means I'm supposed to forget how you left?");
-				scr_text("I made you.");
-				scr_text("You were nothing before me.");
+				scr_text("You think just showing up again means I'm supposed to forget how you left?", "ex");
+				scr_text("I made you.", "ex");
+				scr_text("You were nothing before me.", "ex");
 					scr_option("You didn't make me.", "ex 2.1");
 					scr_option("I don't want to fight.", "ex 2.2");
 					scr_option("You ruined me.", "ex 2.3");
@@ -658,14 +658,14 @@ function scr_game_text(_text_id){
 				
 			#region ex 1.2
 			case "ex 1.2":
-				scr_text("Of course you did.");
-				scr_text("No one else is picking up?");
-				scr_text("You always end up crawling back.");
+				scr_text("Of course you did.", "ex");
+				scr_text("No one else is picking up?", "ex");
+				scr_text("You always end up crawling back.", "ex");
 		
 				#region ex 2
-				scr_text("You think just showing up again means I'm supposed to forget how you left?");
-				scr_text("I made you.");
-				scr_text("You were nothing before me.");
+				scr_text("You think just showing up again means I'm supposed to forget how you left?", "ex");
+				scr_text("I made you.", "ex");
+				scr_text("You were nothing before me.", "ex");
 					scr_option("You didn't make me.", "ex 2.1");
 					scr_option("I don't want to fight.", "ex 2.2");
 					scr_option("You ruined me.", "ex 2.3");
@@ -677,15 +677,15 @@ function scr_game_text(_text_id){
 			#region ex 1.3
 			case "ex 1.3":
 				global.curr_points--;
-				scr_text("Come on.");
-				scr_text("Don't act like this is about me.");
-				scr_text("You want something.");
-				scr_text("You always did.");
+				scr_text("Come on.", "ex");
+				scr_text("Don't act like this is about me.", "ex");
+				scr_text("You want something.", "ex");
+				scr_text("You always did.", "ex");
 				
 				#region ex 2
-				scr_text("You think just showing up again means I'm supposed to forget how you left?");
-				scr_text("I made you.");
-				scr_text("You were nothing before me.");
+				scr_text("You think just showing up again means I'm supposed to forget how you left?", "ex");
+				scr_text("I made you.", "ex");
+				scr_text("You were nothing before me.", "ex");
 					scr_option("You didn't make me.", "ex 2.1");
 					scr_option("I don't want to fight.", "ex 2.2");
 					scr_option("You ruined me.", "ex 2.3");
@@ -700,15 +700,15 @@ function scr_game_text(_text_id){
 				case "ex 2.1":
 					global.curr_points++;
 					scr_text("*They laugh mockingly.*");
-					scr_text("Sure.");
-					scr_text("Keep telling yourself that.");
-					scr_text("But I'm the only one who stuck around.");
-					scr_text("Even now, you're calling me of all people.");
+					scr_text("Sure.", "ex");
+					scr_text("Keep telling yourself that.", "ex");
+					scr_text("But I'm the only one who stuck around.", "ex");
+					scr_text("Even now, you're calling me of all people.", "ex");
 
 					#region ex 3
-					scr_text("Remember the cabin? The weekend by the lake?");
-					scr_text("You looked at me like I was your entire world.");
-					scr_text("Don't act like none of it was real.");
+					scr_text("Remember the cabin? The weekend by the lake?", "ex");
+					scr_text("You looked at me like I was your entire world.", "ex");
+					scr_text("Don't act like none of it was real.", "ex");
 						scr_option("I remember. I was happy, once.", "ex 3.1");
 						scr_option("I thought I was happy.", "ex 3.2");
 						scr_option("That wasn't real. I just wanted it to be.", "ex 3.3");
@@ -719,14 +719,14 @@ function scr_game_text(_text_id){
 				
 				#region ex 2.2
 				case "ex 2.2":
-					scr_text("Is that so?");
-					scr_text("Funny, because that's all we ever did.");
-					scr_text("Let's not pretend that you hated it.");
+					scr_text("Is that so?", "ex");
+					scr_text("Funny, because that's all we ever did.", "ex");
+					scr_text("Let's not pretend that you hated it.", "ex");
 					
 					#region ex 3
-					scr_text("Remember the cabin? The weekend by the lake?");
-					scr_text("You looked at me like I was your entire world.");
-					scr_text("Don't act like none of it was real.");
+					scr_text("Remember the cabin? The weekend by the lake?", "ex");
+					scr_text("You looked at me like I was your entire world.", "ex");
+					scr_text("Don't act like none of it was real.", "ex");
 						scr_option("I remember. I was happy, once.", "ex 3.1");
 						scr_option("I thought I was happy.", "ex 3.2");
 						scr_option("That wasn't real. I just wanted it to be.", "ex 3.3");
@@ -738,14 +738,14 @@ function scr_game_text(_text_id){
 				#region ex 2.3
 				case "ex 2.3":
 					global.curr_points--;
-					scr_text("Please.");
-					scr_text("You were already ruined when I found you.");
-					scr_text("I just stopped pretending I could fix you.");
+					scr_text("Please.", "ex");
+					scr_text("You were already ruined when I found you.", "ex");
+					scr_text("I just stopped pretending I could fix you.", "ex");
 
 					#region ex 3
-					scr_text("Remember the cabin? The weekend by the lake?");
-					scr_text("You looked at me like I was your entire world.");
-					scr_text("Don't act like none of it was real.");
+					scr_text("Remember the cabin? The weekend by the lake?", "ex");
+					scr_text("You looked at me like I was your entire world.", "ex");
+					scr_text("Don't act like none of it was real.", "ex");
 						scr_option("I remember. I was happy, once.", "ex 3.1");
 						scr_option("I thought I was happy.", "ex 3.2");
 						scr_option("That wasn't real. I just wanted it to be.", "ex 3.3");
@@ -758,10 +758,10 @@ function scr_game_text(_text_id){
 					#region ex 3.1
 					case "ex 3.1":
 						global.curr_points++;
-						scr_text("Yeah. You were.");
-						scr_text("That's the version of you I liked.");
-						scr_text("The one who needed me.");
-						scr_text("The one who didn't talk back.");
+						scr_text("Yeah. You were.", "ex");
+						scr_text("That's the version of you I liked.", "ex");
+						scr_text("The one who needed me.", "ex");
+						scr_text("The one who didn't talk back.", "ex");
 						
 						if (global.curr_points >= 3) {
 							scr_option("I don't regret leaving.", "ex good");
@@ -776,9 +776,9 @@ function scr_game_text(_text_id){
 				
 					#region ex 3.2
 					case "ex 3.2":
-						scr_text("Maybe you were.");
-						scr_text("Or maybe you just liked the attention.");
-						scr_text("You never did know what you wanted.");
+						scr_text("Maybe you were.", "ex");
+						scr_text("Or maybe you just liked the attention.", "ex");
+						scr_text("You never did know what you wanted.", "ex");
 						
 						if (global.curr_points >= 3) {
 							scr_option("I don't regret leaving.", "ex good");
@@ -794,9 +794,9 @@ function scr_game_text(_text_id){
 					#region ex 3.3
 					case "ex 3.3":
 						global.curr_points--;
-						scr_text("Right, here we go again.");
-						scr_text("Now I'm the villain.");
-						scr_text("You always do this.");
+						scr_text("Right, here we go again.", "ex");
+						scr_text("Now I'm the villain.", "ex");
+						scr_text("You always do this.", "ex");
 						
 						if (global.curr_points >= 3) {
 							scr_option("I don't regret leaving.", "ex good");
@@ -812,9 +812,9 @@ function scr_game_text(_text_id){
 					//endings
 					#region ex good
 					case "ex good":
-						scr_text("What's that supposed to mean?");
-						scr_text("You think you're above me now?");
-						scr_text("You wouldn't even exist without me.");
+						scr_text("What's that supposed to mean?", "ex");
+						scr_text("You think you're above me now?", "ex");
+						scr_text("You wouldn't even exist without me.", "ex");
 						scr_text("*They continue ranting, but you stop listening.*");
 						scr_text("*You hang up.*");
 						scr_text("*For once, the silence is welcome.*");
@@ -825,9 +825,9 @@ function scr_game_text(_text_id){
 					
 					#region ex bad
 					case "ex bad":
-						scr_text("Of course you are.");
-						scr_text("You always were.");
-						scr_text("Just how I like it.");
+						scr_text("Of course you are.", "ex");
+						scr_text("You always were.", "ex");
+						scr_text("Just how I like it.", "ex");
 							global.ex_done = true;
 							scr_option("...", "room done");
 							break;
@@ -845,8 +845,8 @@ function scr_game_text(_text_id){
             scr_text("*I owe them an explanation.*");
             scr_text("...");
 
-            scr_text("Hello.");
-            scr_text("I didn't expect to hear from you again.");
+            scr_text("Hello.", "boss");
+            scr_text("I didn't expect to hear from you again.", "boss");
                 scr_option("...I'm sick. I didn't want anyone to see me like this.", "boss 1.1");
                 scr_option("It was personal. I needed space.", "boss 1.2");
                 scr_option("I couldn't bring myself to care anymore.", "boss 1.3");
@@ -856,16 +856,16 @@ function scr_game_text(_text_id){
             #region boss 1.1
             case "boss 1.1":
                 global.curr_points++;
-                scr_text("...I see.");
-                scr_text("That must've been hard.");
-                scr_text("Still, you vanished.");
-                scr_text("No explanation.");
-                scr_text("I would've tried to help, you know.");
+                scr_text("...I see.", "boss");
+                scr_text("That must've been hard.", "boss");
+                scr_text("Still, you vanished.", "boss");
+                scr_text("No explanation.", "boss");
+                scr_text("I would've tried to help, you know.", "boss");
 
                 #region boss 2
-                scr_text("I keep thinking about how much time I spent teaching you the ropes.");
-                scr_text("It may have mattered more to me than it did to you.");
-                scr_text("But since you called, I want to know what it meant to you.");
+                scr_text("I keep thinking about how much time I spent teaching you the ropes.", "boss");
+                scr_text("It may have mattered more to me than it did to you.", "boss");
+                scr_text("But since you called, I want to know what it meant to you.", "boss");
                     scr_option("You were the only one who expected something of me.", "boss 2.1");
                     scr_option("You were just my boss.", "boss 2.2");
                     scr_option("You made me feel like I was never enough.", "boss 2.3");
@@ -876,14 +876,14 @@ function scr_game_text(_text_id){
 
             #region boss 1.2
             case "boss 1.2":
-                scr_text("I won't pretend to understand what you were dealing with.");
-                scr_text("But you left people wondering.");
-                scr_text("You left me wondering.");
+                scr_text("I won't pretend to understand what you were dealing with.", "boss");
+                scr_text("But you left people wondering.", "boss");
+                scr_text("You left me wondering.", "boss");
 
                 #region boss 2
-                scr_text("I keep thinking about how much time I spent teaching you the ropes.");
-                scr_text("It may have mattered more to me than it did to you.");
-                scr_text("But since you called, I want to know what it meant to you.");
+                scr_text("I keep thinking about how much time I spent teaching you the ropes.", "boss");
+                scr_text("It may have mattered more to me than it did to you.", "boss");
+                scr_text("But since you called, I want to know what it meant to you.", "boss");
                     scr_option("You were the only one who expected something of me.", "boss 2.1");
                     scr_option("You were just my boss.", "boss 2.2");
                     scr_option("You made me feel like I was never enough.", "boss 2.3");
@@ -895,14 +895,14 @@ function scr_game_text(_text_id){
             #region boss 1.3
             case "boss 1.3":
                 global.curr_points--;
-                scr_text("That's... disappointing.");
-                scr_text("I thought you took pride in what you did.");
-                scr_text("If you were struggling, I wish you said something.");
+                scr_text("That's... disappointing.", "boss");
+                scr_text("I thought you took pride in what you did.", "boss");
+                scr_text("If you were struggling, I wish you said something.", "boss");
 
                 #region boss 2
-                scr_text("I keep thinking about how much time I spent teaching you the ropes.");
-                scr_text("It may have mattered more to me than it did to you.");
-                scr_text("But since you called, I want to know what it meant to you.");
+                scr_text("I keep thinking about how much time I spent teaching you the ropes.", "boss");
+                scr_text("It may have mattered more to me than it did to you.", "boss");
+                scr_text("But since you called, I want to know what it meant to you.", "boss");
                     scr_option("You were the only one who expected something of me.", "boss 2.1");
                     scr_option("You were just my boss.", "boss 2.2");
                     scr_option("You made me feel like I was never enough.", "boss 2.3");
@@ -915,11 +915,11 @@ function scr_game_text(_text_id){
                 #region boss 2.1
                 case "boss 2.1":
                     global.curr_points++;
-                    scr_text("Expectation doesn't always mean kindness.");
-                    scr_text("But I saw what you were capable of.");
-                    scr_text("I wanted you to see it too.");
-                    scr_text("Maybe I pushed too hard.");
-                    scr_text("Still, thank you for saying that.");
+                    scr_text("Expectation doesn't always mean kindness.", "boss");
+                    scr_text("But I saw what you were capable of.", "boss");
+                    scr_text("I wanted you to see it too.", "boss");
+                    scr_text("Maybe I pushed too hard.", "boss");
+                    scr_text("Still, thank you for saying that.", "boss");
 
                     if (global.curr_points >= 2) {
                         scr_option("I'm sorry for how I left.", "boss good");
@@ -933,10 +933,10 @@ function scr_game_text(_text_id){
 
                 #region boss 2.2
                 case "boss 2.2":
-                    scr_text("Fair enough.");
-                    scr_text("I wasn't trying to be more than that.");
-                    scr_text("I just wanted to see you succeed.");
-                    scr_text("That was all.");
+                    scr_text("Fair enough.", "boss");
+                    scr_text("I wasn't trying to be more than that.", "boss");
+                    scr_text("I just wanted to see you succeed.", "boss");
+                    scr_text("That was all.", "boss");
 
                     if (global.curr_points >= 2) {
                         scr_option("I'm sorry for how I left.", "boss good");
@@ -951,8 +951,8 @@ function scr_game_text(_text_id){
                 #region boss 2.3
                 case "boss 2.3":
                     global.curr_points--;
-                    scr_text("That's... hard to hear.");
-                    scr_text("But I'm not going to argue with how you felt.");
+                    scr_text("That's... hard to hear.", "boss");
+                    scr_text("But I'm not going to argue with how you felt.", "boss");
 
                     if (global.curr_points >= 2) {
                         scr_option("I'm sorry for how I left.", "boss good");
@@ -967,12 +967,12 @@ function scr_game_text(_text_id){
                 //endings
                 #region boss good
                 case "boss good":
-                    scr_text("You don't owe me an apology.");
-                    scr_text("But I appreciate it.");
-                    scr_text("I don't know what is next for you, but I hope you find peace.");
-                    scr_text("You were good at what you did.");
-                    scr_text("I mean that.");
-                    scr_text("Take care of yourself.");
+                    scr_text("You don't owe me an apology.", "boss");
+                    scr_text("But I appreciate it.", "boss");
+                    scr_text("I don't know what is next for you, but I hope you find peace.", "boss");
+                    scr_text("You were good at what you did.", "boss");
+                    scr_text("I mean that.", "boss");
+                    scr_text("Take care of yourself.", "boss");
                         global.boss_done = true;
                         scr_option("Thank you.", "room done");
                         break;
@@ -981,11 +981,11 @@ function scr_game_text(_text_id){
 
                 #region boss bad
                 case "boss bad":
-                    scr_text("I guess that's all there is to say.");
-                    scr_text("You made your choices.");
-                    scr_text("I just wish you made different ones.");
-                    scr_text("...Good luck.");
-                    scr_text("I hope this gave you what you needed.");
+                    scr_text("I guess that's all there is to say.", "boss");
+                    scr_text("You made your choices.", "boss");
+                    scr_text("I just wish you made different ones.", "boss");
+                    scr_text("...Good luck.", "boss");
+                    scr_text("I hope this gave you what you needed.", "boss");
                         global.boss_done = true;
                         scr_option("...", "room done");
                         break;
@@ -1004,9 +1004,9 @@ function scr_game_text(_text_id){
             scr_text("*Maybe they do, too.*");
             scr_text("...");
 
-            scr_text("Hey, silly!"); 
-            scr_text("Didn't expect to hear from you.");
-            scr_text("You okay? Everything alright?");
+            scr_text("Hey, silly!", "best friend"); 
+            scr_text("Didn't expect to hear from you.", "best friend");
+            scr_text("You okay? Everything alright?", "best friend");
                 scr_option("...No. I'm really scared.", "best friend 1.1");
                 scr_option("I'm fine. Really.", "best friend 1.2");
                 scr_option("It's not your problem.", "best friend 1.3");
@@ -1016,19 +1016,20 @@ function scr_game_text(_text_id){
             #region best friend 1.1
             case "best friend 1.1":
                 global.curr_points++;
-                scr_text("...Yeah.");
-                scr_text("I figured.");
-                scr_text("You don't have to go through this alone, okay?");
-                scr_text("I'm here.");
-                scr_text("Unless you start crying, I might hang up.");
-                scr_text("Kidding.");
-                scr_text(".....Mostly.");
+                scr_text("...Yeah.", "best friend");
+                scr_text("I figured.", "best friend");
+                scr_text("You don't have to go through this alone, okay?", "best friend");
+                scr_text("I'm here.", "best friend");
+                scr_text("Unless you start crying, I might hang up.", "best friend");
+                scr_text("Kidding.", "best friend");
+                scr_text(".....Mostly.", "best friend");
+				scr_text("*You know she's winking, even if you can't see her.*");
 
                 #region best friend 2
-                scr_text("Remember those nights we stayed up too late?");
-                scr_text("Talking about everything we were gonna do together someday?");
-                scr_text("We were gonna road trip across the country,");
-                scr_text("and hit upevery weird themed diner we could find.");
+                scr_text("Remember those nights we stayed up too late?", "best friend");
+                scr_text("Talking about everything we were gonna do together someday?", "best friend");
+                scr_text("We were gonna road trip across the country,", "best friend");
+                scr_text("and hit upevery weird themed diner we could find.", "best friend");
                     scr_option("Remember when we used to talk about growing old?", "best friend 2.1");
                     scr_option("Yeah, it's funny, right?", "best friend 2.2");
                     scr_option("Those dreams were stupid.", "best friend 2.3");
@@ -1039,15 +1040,16 @@ function scr_game_text(_text_id){
 
             #region best friend 1.2
             case "best friend 1.2":
-                scr_text("Uh-huh.");
-                scr_text("I'll play along if that's what you want.");
-                scr_text("But you don't have to pretend. Not with me.");
+                scr_text("Uh-huh.", "best friend");
+                scr_text("I'll play along if that's what you want.", "best friend");
+                scr_text("But you don't have to pretend.", "best friend");
+				scr_text("Not with me.", "best friend");
 
                 #region best friend 2
-                scr_text("Remember those nights we stayed up too late?");
-                scr_text("Talking about everything we were gonna do together someday?");
-                scr_text("We were gonna road trip across the country,");
-                scr_text("and hit upevery weird themed diner we could find.");
+                scr_text("Remember those nights we stayed up too late?", "best friend");
+                scr_text("Talking about everything we were gonna do together someday?", "best friend");
+                scr_text("We were gonna road trip across the country,", "best friend");
+                scr_text("and hit upevery weird themed diner we could find.", "best friend");
                     scr_option("Remember when we used to talk about growing old?", "best friend 2.1");
                     scr_option("Yeah, it's funny, right?", "best friend 2.2");
                     scr_option("Those dreams were stupid.", "best friend 2.3");
@@ -1059,17 +1061,17 @@ function scr_game_text(_text_id){
             #region best friend 1.3
             case "best friend 1.3":
                 global.curr_points--;
-                scr_text("Nuh-uh.");
-                scr_text("Absolutely not.");
-                scr_text("Do you think I stuck around this long out of guilt?");
-                scr_text("You matter.");
-                scr_text("Whether you like it or not.");
+                scr_text("Nuh-uh.", "best friend");
+                scr_text("Absolutely not.", "best friend");
+                scr_text("Do you think I stuck around this long out of guilt?", "best friend");
+                scr_text("You matter.", "best friend");
+                scr_text("Whether you like it or not.", "best friend");
 
                 #region best friend 2
-                scr_text("Remember those nights we stayed up too late?");
-                scr_text("Talking about everything we were gonna do together someday?");
-                scr_text("We were gonna road trip across the country,");
-                scr_text("and hit upevery weird themed diner we could find.");
+                scr_text("Remember those nights we stayed up too late?", "best friend");
+                scr_text("Talking about everything we were gonna do together someday?", "best friend");
+                scr_text("We were gonna road trip across the country,", "best friend");
+                scr_text("and hit upevery weird themed diner we could find.", "best friend");
                     scr_option("Remember when we used to talk about growing old?", "best friend 2.1");
                     scr_option("Yeah, it's funny, right?", "best friend 2.2");
                     scr_option("Those dreams were stupid.", "best friend 2.3");
@@ -1082,17 +1084,17 @@ function scr_game_text(_text_id){
                 #region best friend 2.1
                 case "best friend 2.1":
                     global.curr_points++;
-                    scr_text("*She laughs.*");
+                    scr_text("*She laughs.*", "best friend");
                     scr_text("*You can tell she is masking her sadness.*");
-                    scr_text("Only all the time!");
-                    scr_text("We would get matching rocking chairs and yell at kids to get off our lawn.");
-                    scr_text("Still planning on it, by the way.");
-                    scr_text("Even if I have to do the yelling for both of us.");
+                    scr_text("Only all the time!", "best friend");
+                    scr_text("We would get matching rocking chairs and yell at kids to get off our lawn.", "best friend");
+                    scr_text("...Still planning on it, by the way.", "best friend");
+                    scr_text("Even if I have to do the yelling for both of us.", "best friend");
 
                     #region best friend 3
-                    scr_text("...I've been trying to keep it light, you know?");
-                    scr_text("Figured if I joked enough, maybe this heartache would go away.");
-                    scr_text("Maybe it wouldn't feel so heavy.");
+                    scr_text("...I've been trying to keep it light, you know?", "best friend");
+                    scr_text("Figured if I joked enough, maybe this heartache would go away.", "best friend");
+                    scr_text("Maybe it wouldn't feel so heavy.", "best friend");
                         scr_option("You don't have to do that with me.", "best friend 3.1");
                         scr_option("I get it. I've been doing the same.", "best friend 3.2");
                         scr_option("It's not helping.", "best friend 3.3");
@@ -1103,14 +1105,14 @@ function scr_game_text(_text_id){
 
                 #region best friend 2.2
                 case "best friend 2.2":
-                    scr_text("\"Funny\" is one word for it.");
-                    scr_text("But, hey, dark humor's kind of our thing.");
-                    scr_text("...I'll laugh if you do");
+                    scr_text("\"Funny\" is one word for it.", "best friend");
+                    scr_text("But, hey, dark humor's kind of our thing.", "best friend");
+                    scr_text("...I'll laugh if you do", "best friend");
 
                     #region best friend 3
-                    scr_text("...I've been trying to keep it light, you know?");
-                    scr_text("Figured if I joked enough, maybe this heartache would go away.");
-                    scr_text("Maybe it wouldn't feel so heavy.");
+                    scr_text("...I've been trying to keep it light, you know?", "best friend");
+                    scr_text("Figured if I joked enough, maybe this heartache would go away.", "best friend");
+                    scr_text("Maybe it wouldn't feel so heavy.", "best friend");
                         scr_option("You don't have to do that with me.", "best friend 3.1");
                         scr_option("I get it. I've been doing the same.", "best friend 3.2");
                         scr_option("It's not helping.", "best friend 3.3");
@@ -1122,16 +1124,16 @@ function scr_game_text(_text_id){
                 #region best friend 2.3
                 case "best friend 2.3":
                     global.curr_points--;
-                    scr_text("Hey!");
-                    scr_text("They weren't stupid!");
-                    scr_text("They were ours.");
-                    scr_text("Even if those dreams can't come true now...");
-                    scr_text("They still... meant something.");
+                    scr_text("Hey!", "best friend");
+                    scr_text("They weren't stupid!", "best friend");
+                    scr_text("They were ours.", "best friend");
+                    scr_text("Even if those dreams can't come true now...", "best friend");
+                    scr_text("They still... meant something.", "best friend");
     
                     #region best friend 3
-                    scr_text("...I've been trying to keep it light, you know?");
-                    scr_text("Figured if I joked enough, maybe this heartache would go away.");
-                    scr_text("Maybe it wouldn't feel so heavy.");
+                    scr_text("...I've been trying to keep it light, you know?", "best friend");
+                    scr_text("Figured if I joked enough, maybe this heartache would go away.", "best friend");
+                    scr_text("Maybe it wouldn't feel so heavy.", "best friend");
                         scr_option("You don't have to do that with me.", "best friend 3.1");
                         scr_option("I get it. I've been doing the same.", "best friend 3.2");
                         scr_option("It's not helping.", "best friend 3.3");
@@ -1144,11 +1146,11 @@ function scr_game_text(_text_id){
                     #region best friend 3.1
                     case "best friend 3.1":
                         global.curr_points++;
-                        scr_text("...Okay.");
-                        scr_text("Thank you.");
+                        scr_text("...Okay.", "best friend");
+                        scr_text("Thank you.", "best friend");
                         scr_text("*She sounds like she could fall apart any second.*");
-                        scr_text("It's honestly been... really hard.");
-                        scr_text("But if you're being honest with me, I want to be honest with you, too.");
+                        scr_text("It's honestly been... really hard.", "best friend");
+                        scr_text("But if you're being honest with me, I want to be honest with you, too.", "best friend");
 
                         if (global.curr_points >= 3) {
                             scr_option("Thanks for being here.", "best friend good");
@@ -1163,9 +1165,9 @@ function scr_game_text(_text_id){
 
                     #region best friend 3.2
                     case "best friend 3.2":
-                        scr_text("Yeah?");
-                        scr_text("Guess we're both full of it.");
-                        scr_text("Maybe we should try being honest for once.");
+                        scr_text("Yeah?", "best friend");
+                        scr_text("Guess we're both full of it.", "best friend");
+                        scr_text("Maybe we should try being honest for once.", "best friend");
 
                         if (global.curr_points >= 3) {
                             scr_option("Thanks for being here.", "best friend good");
@@ -1181,11 +1183,11 @@ function scr_game_text(_text_id){
                     #region best friend 3.3
                     case "best friend 3.3":
                         global.curr_points--;
-                        scr_text("Okay.");
-                        scr_text("I'm sorry.");
-                        scr_text("I didn't mean to make it worse.");
-                        scr_text("I just...");
-                        scr_text("...didn't want this to hurt more than it already does.");
+                        scr_text("Okay.", "best friend");
+                        scr_text("I'm sorry.", "best friend");
+                        scr_text("I didn't mean to make it worse.", "best friend");
+                        scr_text("I just...", "best friend");
+                        scr_text("...didn't want this to hurt more than it already does.", "best friend");
 
                         if (global.curr_points >= 3) {
                             scr_option("Thanks for being here.", "best friend good");
@@ -1201,28 +1203,28 @@ function scr_game_text(_text_id){
                     //endings
                     #region best friend good
                     case "best friend good":
-                        scr_text("Always.");
-                        scr_text("Even when things got hard, I never stopped being your friend.");
-                        scr_text("You don't have to do this alone.");
-                        scr_text("Not now.");
-                        scr_text("We've got whatever time's left.");
-                        scr_text("I love you, okay?");
-                        scr_text("And I'm not going anywhere.");
-                        scr_text("See you later, alligator.");
+                        scr_text("Always.", "best friend");
+                        scr_text("Even when things got hard, I never stopped being your friend.", "best friend");
+                        scr_text("You don't have to do this alone.", "best friend");
+                        scr_text("Not now.", "best friend");
+                        scr_text("We've got whatever time's left.", "best friend");
+                        scr_text("I love you, okay?", "best friend");
+                        scr_text("And I'm not going anywhere.", "best friend");
+                        scr_text("See you later, alligator.", "best friend");
                             global.best_friend_done = true;
-                            scr_option("See you.", "room done");
+                            scr_option("...In a while, crocodile.", "room done");
                             break;
                         #endregion best friend good
 
                     #region best friend bad
                     case "best friend bad":
-                        scr_text("Yeah... Yeah, okay.");
-                        scr_text("Catch you later.");
-                        scr_text("In a while, crocodile.");
+                        scr_text("Yeah... Yeah, okay.", "best friend");
+                        scr_text("Catch you later.", "best friend");
+                        scr_text("In a while, crocodile.", "best friend");
                         scr_text("*She lets out a pained laugh.*");
-                        scr_text("Take care of yourself, all right?");
-                        scr_text("Talk soon.");
-                        scr_text("Promise.");
+                        scr_text("Take care of yourself, all right?", "best friend");
+                        scr_text("Talk soon.", "best friend");
+                        scr_text("Promise.", "best friend");
                             global.best_friend_done = true;
                             scr_option("Okay.", "room done");
                             break;
