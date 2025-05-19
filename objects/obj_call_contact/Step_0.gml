@@ -25,3 +25,6 @@ if (global.room_done == true) {
 	}
 	
 }
+if room == (rm_ending){
+	instance_destroy();	
+}

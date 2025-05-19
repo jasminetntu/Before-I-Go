@@ -1,0 +1,1 @@
+music = snd_music;

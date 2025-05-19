@@ -31,7 +31,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.0.190",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"Before I Go",
   "resources":[
@@ -46,7 +46,7 @@
     {"id":{"name":"obj_call_contact","path":"objects/obj_call_contact/obj_call_contact.yy",},},
     {"id":{"name":"obj_dialog_cutscene","path":"objects/obj_dialog_cutscene/obj_dialog_cutscene.yy",},},
     {"id":{"name":"obj_fader","path":"objects/obj_fader/obj_fader.yy",},},
-    {"id":{"name":"obj_imdead","path":"objects/obj_imdead/obj_imdead.yy",},},
+    {"id":{"name":"obj_hospital_ambience","path":"objects/obj_hospital_ambience/obj_hospital_ambience.yy",},},
     {"id":{"name":"obj_music","path":"objects/obj_music/obj_music.yy",},},
     {"id":{"name":"obj_OLD_dialog_cutscene","path":"objects/obj_OLD_dialog_cutscene/obj_OLD_dialog_cutscene.yy",},},
     {"id":{"name":"obj_phone_button","path":"objects/obj_phone_button/obj_phone_button.yy",},},
@@ -69,7 +69,7 @@
     {"id":{"name":"scr_game_text","path":"scripts/scr_game_text/scr_game_text.yy",},},
     {"id":{"name":"scr_text_functions","path":"scripts/scr_text_functions/scr_text_functions.yy",},},
     {"id":{"name":"snd_credits","path":"sounds/snd_credits/snd_credits.yy",},},
-    {"id":{"name":"snd_imdead","path":"sounds/snd_imdead/snd_imdead.yy",},},
+    {"id":{"name":"snd_ending","path":"sounds/snd_ending/snd_ending.yy",},},
     {"id":{"name":"snd_music","path":"sounds/snd_music/snd_music.yy",},},
     {"id":{"name":"spr_1_x_1_black","path":"sprites/spr_1_x_1_black/spr_1_x_1_black.yy",},},
     {"id":{"name":"spr_arrow_option","path":"sprites/spr_arrow_option/spr_arrow_option.yy",},},
@@ -103,8 +103,8 @@
     {"roomId":{"name":"rm_afternoon","path":"rooms/rm_afternoon/rm_afternoon.yy",},},
     {"roomId":{"name":"rm_evening","path":"rooms/rm_evening/rm_evening.yy",},},
     {"roomId":{"name":"rm_night","path":"rooms/rm_night/rm_night.yy",},},
-    {"roomId":{"name":"rm_credits","path":"rooms/rm_credits/rm_credits.yy",},},
     {"roomId":{"name":"rm_ending","path":"rooms/rm_ending/rm_ending.yy",},},
+    {"roomId":{"name":"rm_credits","path":"rooms/rm_credits/rm_credits.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
