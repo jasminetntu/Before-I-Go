@@ -840,10 +840,159 @@ function scr_game_text(_text_id){
 		
 		#region boss dialogue
 		case "boss":
-		
-		
-			break;
-		#endregion
+            scr_text("*We weren't close, but they gave me a chance when they didn't have to.*");
+            scr_text("*I walked away without warning.*");
+            scr_text("*I owe them an explanation.*");
+            scr_text("...");
+
+            scr_text("Hello.");
+            scr_text("I didn't expect to hear from you again.");
+                scr_option("...I'm sick. I didn't want anyone to see me like this.", "boss 1.1");
+                scr_option("It was personal. I needed space.", "boss 1.2");
+                scr_option("I couldn't bring myself to care anymore.", "boss 1.3");
+			    break;
+
+            //options 1
+            #region boss 1.1
+            case "boss 1.1":
+                global.curr_points++;
+                scr_text("...I see.");
+                scr_text("That must've been hard.");
+                scr_text("Still, you vanished.");
+                scr_text("No explanation.");
+                scr_text("I would've tried to help, you know.");
+
+                #region boss 2
+                scr_text("I keep thinking about how much time I spent teaching you the ropes.");
+                scr_text("It may have mattered more to me than it did to you.");
+                scr_text("But since you called, I want to know what it meant to you.");
+                    scr_option("You were the only one who expected something of me.", "boss 2.1");
+                    scr_option("You were just my boss.", "boss 2.2");
+                    scr_option("You made me feel like I was never enough.", "boss 2.3");
+                    #endregion boss 2
+                    break;
+
+                #endregion boss 1.1
+
+            #region boss 1.2
+            case "boss 1.2":
+                scr_text("I won't pretend to understand what you were dealing with.");
+                scr_text("But you left people wondering.");
+                scr_text("You left me wondering.");
+
+                #region boss 2
+                scr_text("I keep thinking about how much time I spent teaching you the ropes.");
+                scr_text("It may have mattered more to me than it did to you.");
+                scr_text("But since you called, I want to know what it meant to you.");
+                    scr_option("You were the only one who expected something of me.", "boss 2.1");
+                    scr_option("You were just my boss.", "boss 2.2");
+                    scr_option("You made me feel like I was never enough.", "boss 2.3");
+                    #endregion boss 2
+                    break;
+
+                #endregion boss 1.1
+
+            #region boss 1.3
+            case "boss 1.3":
+                global.curr_points--;
+                scr_text("That's... disappointing.");
+                scr_text("I thought you took pride in what you did.");
+                scr_text("If you were struggling, I wish you said something.");
+
+                #region boss 2
+                scr_text("I keep thinking about how much time I spent teaching you the ropes.");
+                scr_text("It may have mattered more to me than it did to you.");
+                scr_text("But since you called, I want to know what it meant to you.");
+                    scr_option("You were the only one who expected something of me.", "boss 2.1");
+                    scr_option("You were just my boss.", "boss 2.2");
+                    scr_option("You made me feel like I was never enough.", "boss 2.3");
+                    #endregion boss 2
+                    break;
+
+                #endregion boss 1.3
+
+                //options 2
+                #region boss 2.1
+                case "boss 2.1":
+                    global.curr_points++;
+                    scr_text("Expectation doesn't always mean kindness.");
+                    scr_text("But I saw what you were capable of.");
+                    scr_text("I wanted you to see it too.");
+                    scr_text("Maybe I pushed too hard.");
+                    scr_text("Still, thank you for saying that.");
+
+                    if (global.curr_points >= 2) {
+                        scr_option("I'm sorry for how I left.", "boss good");
+                    }
+                    else {
+                        scr_option("Goodbye.", "boss bad");
+                    }
+
+                    break;
+                    #endregion boss 2.1
+
+                #region boss 2.2
+                case "boss 2.2":
+                    scr_text("Fair enough.");
+                    scr_text("I wasn't trying to be more than that.");
+                    scr_text("I just wanted to see you succeed.");
+                    scr_text("That was all.");
+
+                    if (global.curr_points >= 2) {
+                        scr_option("I'm sorry for how I left.", "boss good");
+                    }
+                    else {
+                        scr_option("Goodbye.", "boss bad");
+                    }
+
+                    break;
+                    #endregion boss 2.2
+
+                #region boss 2.3
+                case "boss 2.3":
+                    global.curr_points--;
+                    scr_text("That's... hard to hear.");
+                    scr_text("But I'm not going to argue with how you felt.");
+
+                    if (global.curr_points >= 2) {
+                        scr_option("I'm sorry for how I left.", "boss good");
+                    }
+                    else {
+                        scr_option("Goodbye.", "boss bad");
+                    }
+
+                    break;
+                    #endregion boss 2.3
+
+                //endings
+                #region boss good
+                case "boss good":
+                    scr_text("You don't owe me an apology.");
+                    scr_text("But I appreciate it.");
+                    scr_text("I don't know what is next for you, but I hope you find peace.");
+                    scr_text("You were good at what you did.");
+                    scr_text("I mean that.");
+                    scr_text("Take care of yourself.");
+                        global.boss_done = true;
+                        scr_option("Thank you.", "room end");
+                        break;
+
+                    #endregion boss good
+
+                #region boss bad
+                case "boss bad":
+                    scr_text("I guess that's all there is to say.");
+                    scr_text("You made your choices.");
+                    scr_text("I just wish you made different ones.");
+                    scr_text("...Good luck.");
+                    scr_text("I hope this gave you what you needed.");
+                        global.boss_done = true;
+                        scr_option("...", "room end");
+                        break;
+
+                    #endregion boss bad
+
+		#endregion boss 
 		
 //-----------------------------------------------------------------------------------
 		
